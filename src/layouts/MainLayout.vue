@@ -1,25 +1,18 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar class="bg-black">
-
-        <q-space />
-
-        <q-tabs
-          dense
-          :breakpoint="500"
-          v-model="tab"
-          class="text-teal"
-        >
-          <q-tab
-            v-for="route in routes"
-            :key="route.name"
-            :name="route.name"
-            :label="route.label"
-          />
-        </q-tabs>
-
-      </q-toolbar>
+    <q-header>
+      <q-tabs
+        :breakpoint="500"
+        v-model="tab"
+        class="text-light-blue-11 bg-black"
+      >
+        <q-tab
+          v-for="route in routes"
+          :key="route.name"
+          :name="route.name"
+          :label="route.label"
+        />
+      </q-tabs>
     </q-header>
 
     <q-page-container>
