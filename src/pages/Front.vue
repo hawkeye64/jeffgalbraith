@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-page class="flex flex-start">
 
     <div id="wrapper">
       <div class="inner-container">
@@ -70,6 +70,7 @@ export default {
       })
 
     this.morph()
+    this.responsiveWidth(this.$q.screen.width)
   },
 
   destroyed () {
@@ -100,6 +101,12 @@ export default {
     }
   },
 
+  watch: {
+    '$q.screen.width' (val) {
+      this.responsiveWidth(val)
+    }
+  },
+
   methods: {
     morph () {
       this.intervalId = setInterval(() => {
@@ -117,6 +124,30 @@ export default {
         //   fill: this.colors[this.currentIndex]
         // }, this.config.duration, window.mina.easeinout, this.morph)
       }, this.config.delay)
+    },
+
+    responsiveWidth (width) {
+      if (width < 390) {
+        this.t.attr({
+          fontSize: '10px',
+          letterSpacing: '1px'
+        })
+      } else if (width < 485) {
+        this.t.attr({
+          fontSize: '12px',
+          letterSpacing: '2px'
+        })
+      } else if (width < 645) {
+        this.t.attr({
+          fontSize: '14px',
+          letterSpacing: '3px'
+        })
+      } else if (width < 745) {
+        this.t.attr({
+          fontSize: '16px',
+          letterSpacing: '5px'
+        })
+      }
     }
   }
 }
