@@ -16,7 +16,9 @@
     </q-header>
 
     <q-page-container>
-      <router-view />
+      <transition :name="transitionName" appear>
+        <router-view />
+      </transition>
     </q-page-container>
   </q-layout>
 </template>
@@ -44,9 +46,41 @@ export default {
     }
   },
 
+  mounted () {
+    this.tab = this.$router.currentRoute.path.slice(1)
+  },
+
+  computed: {
+    transitionName () {
+      const name = 'q-transition--' + (this.direction === 'prev' ? 'slide-right' : 'slide-left')
+      console.log(name)
+      return name
+    }
+  },
+
   watch: {
     tab (newTab, oldTab) {
-      //
+      console.log(newTab, oldTab)
+      let a = this.getPageIndex(newTab)
+      let b = this.getPageIndex(oldTab)
+      this.direction = a < b ? 'prev' : 'next'
+      console.log('direction:', this.direction)
+      if (this.$router.currentRoute.path.slice(1) !== newTab) {
+        this.$router.push(newTab)
+      }
+    }
+  },
+
+  methods: {
+    getPageIndex (tab) {
+      let index = 0
+      for (let route of this.routes) {
+        if (route.name === tab) {
+          return index
+        }
+        ++index
+      }
+      return -1
     }
   }
 }

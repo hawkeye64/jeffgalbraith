@@ -6,7 +6,7 @@
         <svg id="svg-container" :style="svgStyle">
         </svg>
       </div>
-      <p :style="style">Calgary, Alberta CANADA<br>Full-Stack Developer<br>FOSS Contributor<br>Camping and Outdoor Enthusiast</p>
+      <p :style="style">Calgary, Alberta CANADA<br><br>Full-Stack Developer<br>FOSS Contributor<br>Camping and Outdoor Enthusiast</p>
     </div>
 
   </q-page>
@@ -15,10 +15,9 @@
 <script>
 /* eslint-disable-next-line */
 const Snap = require('imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js')
-// const Calgary = require('../statics/calgary_skyline.svg')
 
 export default {
-  name: 'FrontIndex',
+  name: 'Home',
 
   data () {
     return {
