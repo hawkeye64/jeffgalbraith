@@ -11,7 +11,7 @@
           :key="sponsor.name"
           :name="sponsor.name"
           :url="sponsor.url"
-          :image="sponsor.url"
+          :image="sponsor.image"
         />
       </div>
 
@@ -24,7 +24,7 @@
           :key="sponsor.name"
           :name="sponsor.name"
           :url="sponsor.url"
-          :image="sponsor.url"
+          :image="sponsor.image"
         />
       </div>
 
