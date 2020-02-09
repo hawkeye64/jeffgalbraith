@@ -7,8 +7,6 @@
         </svg>
       </div>
       <p :style="style">Calgary, Alberta CANADA<br>Full-Stack Developer<br>Camping and Outdoor Enthusiast</p>
-      <q-icon name="img:statics/skyline-calgary2.svg" size="300px" :style="imgStyle" />
-      <!-- <q-icon name="img:statics/calgary_skyline.svg" size="300px" :style="imgStyle" /> -->
     </div>
 
   </q-page>
