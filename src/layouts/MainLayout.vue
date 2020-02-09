@@ -52,19 +52,15 @@ export default {
 
   computed: {
     transitionName () {
-      const name = 'q-transition--' + (this.direction === 'prev' ? 'slide-right' : 'slide-left')
-      console.log(name)
-      return name
+      return 'q-transition--' + (this.direction === 'prev' ? 'slide-right' : 'slide-left')
     }
   },
 
   watch: {
     tab (newTab, oldTab) {
-      console.log(newTab, oldTab)
       let a = this.getPageIndex(newTab)
       let b = this.getPageIndex(oldTab)
       this.direction = a < b ? 'prev' : 'next'
-      console.log('direction:', this.direction)
       if (this.$router.currentRoute.path.slice(1) !== newTab) {
         this.$router.push(newTab)
       }
