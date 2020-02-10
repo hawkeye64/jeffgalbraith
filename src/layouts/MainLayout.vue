@@ -16,9 +16,9 @@
     </q-header>
 
     <q-page-container>
-      <transition :name="transitionName" appear>
+      <vue-page-transition :name="transitionName">
         <router-view />
-      </transition>
+      </vue-page-transition>
     </q-page-container>
   </q-layout>
 </template>
@@ -52,7 +52,7 @@ export default {
 
   computed: {
     transitionName () {
-      return 'q-transition--' + (this.direction === 'prev' ? 'slide-right' : 'slide-left')
+      return (this.direction === 'prev' ? 'fade-in-right' : 'fade-in-left')
     }
   },
 

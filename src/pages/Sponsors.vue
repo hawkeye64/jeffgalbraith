@@ -3,7 +3,7 @@
     <div class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1" style="max-width: 800px; width: 100%;">
       <h3 style="margin-top: 20px; text-align: center;">Sponsors</h3>
       <q-markdown>
-On Github, I am known as [@Hawkeye64](https://github.com/hawkeye64). I contribute to FOSS, a lot! And, I am very fortunate to have sponsors. Github doubles your donations in your first year of the Github Sponsors program, which is also very fortunate. If you would like to sponsor me, click [here](https://github.com/sponsors/hawkeye64).
+On Github, I am known as [@Hawkeye64](https://github.com/hawkeye64). I contribute to FOSS, a lot! And, I am very fortunate to have sponsors. Github doubles your donations in your first year of the Github Sponsors program, which is also very fortunate. If you would like to sponsor me on Github, click [here](https://github.com/sponsors/hawkeye64).
 
 If you would like to do a one-time sponsor, you can do it through [PayPal](https://paypal.me/hawkeye64).
       </q-markdown>
