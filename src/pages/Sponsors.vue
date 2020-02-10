@@ -43,18 +43,18 @@ export default {
   data () {
     return {
       sponsors10: [
-        { name: 'digitalit', url: 'https://github.com/digitalit', image: 'https://avatars3.githubusercontent.com/u/6569136' },
-        { name: 'dantrevino', url: 'https://github.com/dantrevino', image: 'https://avatars1.githubusercontent.com/u/7738' },
-        { name: 'nothingismagick', url: 'https://github.com/nothingismagick', image: 'https://avatars1.githubusercontent.com/u/35242872' },
-        { name: 'ex-kimura', url: 'https://github.com/ex-kimura', image: 'https://avatars2.githubusercontent.com/u/60215365' }
+        { name: 'digitalit', url: 'https://github.com/digitalit' },
+        { name: 'dantrevino', url: 'https://github.com/dantrevino' },
+        { name: 'nothingismagick', url: 'https://github.com/nothingismagick' },
+        { name: 'ex-kimura', url: 'https://github.com/ex-kimura' }
       ],
       sponsors5: [
-        { name: 'g3rd', url: 'https://github.com/g3rd', image: 'https://avatars1.githubusercontent.com/u/746731' },
-        { name: 'BlueRoseStory', url: 'https://github.com/BlueRoseStory', image: 'https://avatars2.githubusercontent.com/u/45610596' },
-        { name: 'ibrainventures', url: 'https://github.com/ibrainventures', image: 'https://avatars0.githubusercontent.com/u/8803626' },
-        { name: 'Mary-Tyler-Moore', url: 'https://github.com/Mary-Tyler-Moore', image: 'https://avatars0.githubusercontent.com/u/46167401' },
-        { name: 'patrickmonteiro', url: 'https://github.com/patrickmonteiro', image: 'https://avatars3.githubusercontent.com/u/13258255' },
-        { name: 'sqnz', url: 'https://github.com/sqnz', image: 'https://avatars2.githubusercontent.com/u/6564582' }
+        { name: 'g3rd', url: 'https://github.com/g3rd' },
+        { name: 'BlueRoseStory', url: 'https://github.com/BlueRoseStory' },
+        { name: 'ibrainventures', url: 'https://github.com/ibrainventures' },
+        { name: 'Mary-Tyler-Moore', url: 'https://github.com/Mary-Tyler-Moore' },
+        { name: 'patrickmonteiro', url: 'https://github.com/patrickmonteiro' },
+        { name: 'sqnz', url: 'https://github.com/sqnz' }
       ]
     }
   }

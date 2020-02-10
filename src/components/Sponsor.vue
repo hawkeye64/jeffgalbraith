@@ -10,7 +10,7 @@
     >
       <div class="text-center" style="width: 100%;">{{ name }}</div>
       <q-img
-        :src="url"
+        :src="'https://avatars.githubusercontent.com/' + name"
         :ratio="1"
       />
     </q-card-section>
@@ -24,22 +24,16 @@ export default {
   name: 'Sponsor',
 
   props: {
-    name: String,
-    url: String,
-    image: String
+    name: String
   },
 
   data () {
     return {}
   },
 
-  mounted () {
-    console.log(this.name, this.url, this.image)
-  },
-
   methods: {
     onClick () {
-      openURL(this.url)
+      openURL('https://github.com/' + this.name)
     }
   }
 }
@@ -51,4 +45,5 @@ export default {
   width: 100%
   max-height: 200px
   height: 200px
+  color: #777
 </style>
