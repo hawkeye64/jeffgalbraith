@@ -3,20 +3,35 @@
     <div class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1" style="max-width: 800px; width: 100%;">
       <h3 style="margin-top: 20px; text-align: center;">Sponsors</h3>
       <q-markdown>
-# $10 Sponsors
+On Github, I am known as [@Hawkeye64](https://github.com/hawkeye64). I contribute to FOSS, a lot! And, I am very fortunate to have sponsors. Github doubles your donations in your first year of the Github Sponsors program, which is also very fortunate. If you would like to sponsor me, click [here](https://github.com/sponsors/hawkeye64).
+
+If you would like to do a one-time sponsor, you can do it through [PayPal](https://paypal.me/hawkeye64).
+      </q-markdown>
+      <q-markdown>
+# Platinum Sponsors
+      </q-markdown>
+      <q-markdown>
+# Gold Sponsors
+      </q-markdown>
+      <q-markdown>
+# Silver Sponsors
+      </q-markdown>
+      <q-markdown>
+# Bronze Sponsors
+      </q-markdown>
+      <q-markdown>
+# A Sponsors
       </q-markdown>
       <div class="row items-stretch q-gutter-sm">
         <sponsor
           v-for="sponsor in sponsors10"
           :key="sponsor.name"
           :name="sponsor.name"
-          :url="sponsor.url"
-          :image="sponsor.image"
         />
       </div>
 
       <q-markdown>
-# $5 Sponsors
+# B Sponsors
       </q-markdown>
       <div class="row items-stretch q-gutter-sm">
         <sponsor
@@ -43,18 +58,18 @@ export default {
   data () {
     return {
       sponsors10: [
-        { name: 'digitalit', url: 'https://github.com/digitalit' },
-        { name: 'dantrevino', url: 'https://github.com/dantrevino' },
-        { name: 'nothingismagick', url: 'https://github.com/nothingismagick' },
-        { name: 'ex-kimura', url: 'https://github.com/ex-kimura' }
+        { name: 'digitalit' },
+        { name: 'dantrevino' },
+        { name: 'nothingismagick' },
+        { name: 'ex-kimura' }
       ],
       sponsors5: [
-        { name: 'g3rd', url: 'https://github.com/g3rd' },
-        { name: 'BlueRoseStory', url: 'https://github.com/BlueRoseStory' },
-        { name: 'ibrainventures', url: 'https://github.com/ibrainventures' },
-        { name: 'Mary-Tyler-Moore', url: 'https://github.com/Mary-Tyler-Moore' },
-        { name: 'patrickmonteiro', url: 'https://github.com/patrickmonteiro' },
-        { name: 'sqnz', url: 'https://github.com/sqnz' }
+        { name: 'g3rd' },
+        { name: 'BlueRoseStory' },
+        { name: 'ibrainventures' },
+        { name: 'Mary-Tyler-Moore' },
+        { name: 'patrickmonteiro' },
+        { name: 'sqnz' }
       ]
     }
   }

@@ -118,7 +118,6 @@ export default {
           // stroke: this.colors[this.currentIndex],
           d: this.paths[this.currentIndex]
         }, this.config.duration, window.mina.easeinout)
-        // this.p.attr({ 'stroke': this.colors[this.currentIndex] })
         // this.t.animate({
         //   fill: this.colors[this.currentIndex]
         // }, this.config.duration, window.mina.easeinout, this.morph)
