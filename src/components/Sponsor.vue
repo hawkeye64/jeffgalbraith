@@ -12,6 +12,7 @@
       <q-img
         :src="'https://avatars.githubusercontent.com/' + name"
         :ratio="1"
+        class="rounded-borders"
       />
     </q-card-section>
   </q-card>
