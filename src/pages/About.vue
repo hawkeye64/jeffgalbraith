@@ -8,7 +8,7 @@ Hi, my name is Jeff Galbraith and I live in Calgary, Alberta CANADA. You may or 
 
 I currently work for a company called [IntelliView Technologies](https://intelliviewtech.com/) (and no, I don't work on their Wordpress web site -- that's our marketing). Anyway, we build and deliver special dual cameras, along with AI and machine learning, to detect pipeline and gas leaks. It's quite fun and fascinating.
 
-Before then, I have worked for several companies like Microsoft (twice), Honeywell, Vulcan and WildTangent. I spent 13 years living in the States so I can learn from others before returning home to Canada. I also spent 5 of those years teaching at [Bellevue Community College](https://www.bellevuecollege.edu/) writng and teaching course curriculum for C and C++.
+Before then, I have worked for several companies like Microsoft (twice), Honeywell, Vulcan and WildTangent. I spent 13 years living in the States so I can learn from others before returning home to Canada. I also spent 5 of those years teaching at [Bellevue Community College](https://www.bellevuecollege.edu/) writing and teaching course curriculum for C and C++.
 
 Speaking of which, C/C++ had been my main languages since 1988, when I first started programming.
 
