@@ -1,12 +1,46 @@
 <template>
-  <q-page class="flex flex-start">
+  <q-page class="flex flex-start justify-center inset-shadow">
 
-    <div id="wrapper">
+    <div id="wrapper" class="relative-position">
       <div class="inner-container">
         <svg id="svg-container" :style="svgStyle">
         </svg>
       </div>
       <p :style="style">Calgary, Alberta CANADA<br><br>Full-Stack Developer<br>FOSS Contributor<br>Camping and Outdoor Enthusiast</p>
+
+      <div class="continue__arrow-down row justify-center absolute">
+        <q-icon class="continue__arrow-down-icon q-mt-xl" name="expand_more" size="50px" />
+      </div>
+    </div>
+
+    <div class="page-column">
+      <div class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1" style="max-width: 800px; width: 100%;">
+        <q-img
+            src="statics/avatar.jpg"
+            :ratio="1"
+            style="padding: 0 15px; float: left; width: 200px; height: auto;"
+          />
+        <q-markdown>
+Hi, my name is Jeff Galbraith and I live in Calgary, Alberta CANADA. You may or may not have heard of [Calgary](https://www.google.com/maps/place/Calgary,+AB/@51.0272883,-114.3680132,10z/data=!3m1!4b1!4m5!3m4!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831) before, but it is has been voted [5th most livable places to live in the world](https://calgaryherald.com/news/local-news/calgary-edges-out-vancouver-and-toronto-to-rank-as-worlds-fifth-most-liveable-city-the-economist) and I love it here. Granted, there has been several times in the Winter when we have been the coldest place on Earth with wind-chill reaching -45&#176;C to -50&#176;C. But, I don't let that dampen my spirits when working remotely in software development, at those temperatures, is considered the normal here. The summers are typically 22&#176;C to 26&#176;C and even then, we often see the +30&#176;C weather.
+
+During the summer, we go camping -- a lot! Some consider it "glamping" (glorified camping) because we have a trailer and a lot of the time we go off-grid. You pull out to what's called "crown" or "public-use" land, after driving at least several hours, pick a spot, set up your fire and you're camping. Usually, so far remote from civilization there is no mobile services.
+
+I currently work for a company called [IntelliView Technologies](https://intelliviewtech.com/). We build and deliver special dual cameras, along with AI and machine learning, to detect pipeline and gas leaks. It's quite fun and fascinating.
+
+Before then, I have worked for several companies like Microsoft (twice), Honeywell, Vulcan and WildTangent. I spent 13 years living in the States so I can learn from others before returning home to Canada. I also spent 5 of those years teaching at [Bellevue Community College](https://www.bellevuecollege.edu/) writing and teaching course curriculum for C and C++.
+
+Speaking of which, C/C++ had been my main languages since 1988, when I first started programming.
+
+Now, I pretty much do web development. Lots of work with joy and fulfullment in my day-to-day life. I am also, what I call, a part-time Open-Sourcerer and have been on the Core Team of [Quasar Framework](https://github.com/quasarframework) since 2018.
+        </q-markdown>
+        <div class="row justify-center items-center">
+          <q-btn type="a" href="https://twitter.com/jgalbraith64" target="_blank" flat round color="primary" :icon="fabTwitter" size="md" />
+          <q-btn type="a" href="https://github.com/hawkeye64" target="_blank" flat round color="primary" :icon="fabGithub" size="md" />
+          <q-btn type="a" href="https://codepen.io/Hawkeye64" target="_blank" flat round color="primary" :icon="fabCodepen" size="md" />
+          <q-btn type="a" href="mailto:jeff@quasar.dev" target="_blank" flat round color="primary" :icon="farEnvelope" size="md" />
+        </div>
+      </div>
+
     </div>
 
   </q-page>
@@ -15,6 +49,10 @@
 <script>
 /* eslint-disable-next-line */
 const Snap = require('imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js')
+
+import {
+  fabGithub, fabTwitter, fabCodepen, farEnvelope
+} from '@quasar/extras/fontawesome-v5'
 
 export default {
   name: 'Home',
@@ -29,17 +67,19 @@ export default {
         '#21C900', // green
         '#00A0F7' // blue
       ],
-      // paths: [
-      //   'm 90.00301,51.100588 -10.056012,-0.08226 v 0 l -3.301125,-2.795585 -2.304999,-0.490386 v 0 l -2.405473,-2.005696 1.051786,1.5875 -2.198787,-3.704167 v 2.116667 l -2.375529,-7.408333 v 0 l -6.339337,10.583333 5.840669,2.116667 v 0 h -2.354671 v 0 l -3.671445,-2.116667 v 0 l -3.730732,-2.67387 v 0 l 0.722462,0.557204 -2.394485,-2.116667 v 0 L 54.71486,42.523625 v 0 l 1.066474,1.186596 -3.628281,-3.804393 v 0 l -2.003385,-1.910842 v 0 l -1.714921,-1.793325 1.01135,5.291667 -1.064161,-5.291667 -1.946907,-5.820833 v 0 l -0.700806,-1.5875 -1.543888,-3.175 v 0 l -2.033592,3.987649 v 0 l -3.79216,19.824851 5.507618,-23.283333 v 0 l -3.639987,7.422508 v 0 l 0.95823,-2.163915 -3.755764,10.08724 v 0 l -3.62471,7.9375 v 0 l 0.990173,-2.116667 -2.659262,-3.175 v 0 l -1.991548,3.175 v 0 l -2.754564,-4.7625 v 0 l -1.271217,1.5875 0.945617,-1.270945 -1.464921,8.150112 v -6.35 l -1.688619,4.233333 -0.728291,-6.879166 v 0 l -2.135269,3.704166 v 0 l -2.754984,4.7625 3.675155,-6.35 -3.900949,6.879167 v 0 h -3.500309 l 1.042481,-3.175 -1.962431,3.175 v 0 L 0,51.100618',
-      //   'm 90.00301,51.100588 -10.056012,0.03342 v 0 l -3.301125,-7.345712 -2.304999,5.090001 v 0 l -2.405473,-5.075523 h 1.051786 L 70.7884,39.094655 v 0 L 68.412871,34.00809 v 0 l -6.339337,13.591208 h 5.840669 v 0 l -2.354671,-5.138166 v 0 L 61.888087,34.44961 v 0 l -3.730732,8.676027 v 0 h 0.722462 l -2.394485,4.902634 v 0 L 54.71486,44.52022 v 0 h 1.066474 l -3.628281,-7.964636 v 0 l -2.003385,4.291263 v 0 l -1.714921,3.673373 h 1.01135 l -1.064161,2.348216 -1.946907,-4.012894 v 0 l -0.700806,-1.444476 -1.543888,3.200319 v 0 l -2.033592,-4.442527 v 0 l -3.79216,8.487852 h 5.507618 v 0 l -3.639987,-7.661704 v 0 h 0.95823 L 37.43468,32.910984 v 0 l -3.62471,8.084022 v 0 h 0.990173 l -2.659262,5.956238 v 0 l -1.991548,-4.53459 v 0 l -2.754564,6.034022 v 0 l -1.271217,-2.529288 h 0.945617 l -1.464921,-3.124565 v 0 l -1.688619,-3.601695 -0.728291,-1.55339 v 0 l -2.135269,4.479095 v 0 l -2.754984,5.779056 h 3.675155 l -3.900949,-8.695071 v 0 L 14.570982,46.9901 h 1.042481 l -1.962431,4.110493 v 0 L 0,51.100618',
-      //   'm 90.00301,51.100588 -10.056012,-0.08226 v -2.116667 h -3.301125 l -2.304999,2.116667 v -3.704167 h -2.405473 l 1.051786,-2.645833 -2.198787,-4.7625 v 11.1125 h -2.375529 v 0 h -6.339337 l 5.840669,-4.7625 v 3.175 h -2.354671 v -19.05 h -3.671445 v 20.108333 h -3.730732 v -1.5875 l 0.722462,-5.291666 h -2.394485 v 5.291666 H 54.71486 v -5.291666 l 1.066474,-3.175 -3.628281,-14.816667 v 22.754167 h -2.003385 v -2.116667 h -1.714921 l 1.01135,-11.1125 -1.064161,-18.520833 H 46.435029 V 46.255828 H 45.734223 44.190335 V 34.084995 h -2.033592 v 11.641666 l -3.79216,5.820834 h 5.507618 v -4.233334 h -3.639987 v 0 l 0.95823,-5.291666 -3.755764,-11.1125 v 17.4625 h -3.62471 v -6.35 l 0.990173,-8.466667 -2.659262,-7.408333 V 51.018328 H 30.149333 V 29.322495 h -2.754564 v 21.695833 h -1.271217 0.945617 -1.464921 V 38.847495 h -1.688619 l -0.728291,3.175 v 8.995833 h -2.135269 v -1.058333 h -2.754984 3.675155 -3.900949 v -3.704167 h -3.500309 1.042481 l -1.962431,1.5875 v 3.175 L 0,51.100618'
-      // ]
       paths: [
         'm 90.00301,51.100588 -10.056012,-0.591628l-0.210068,0l0,-4.106052c0,-0.107178 -0.220717,-0.252944 -0.491775,-0.396564c0.137464,-0.361194 0.512103,-1.514447 0.526625,-3.41474a7.149115,7.915211 0 0 0 0.528559,-0.750257l-0.086156,-0.352621a0.0697,0.077171 0 0 0 -0.031947,-0.058948c-0.0697,-0.054662 -0.290417,-0.061093 -1.005812,0.446939c-0.604068,0.428716 -3.048419,1.474791 -6.345628,2.271133l-0.178121,0.090031l0.178121,-0.090031c-2.365935,0.571267 -5.172339,1.014992 -8.052313,1.014992c0,0 -0.580837,-0.024651 -1.49178,-0.107182l0,-1.299015l-1.28074,0l0,-1.237925l-2.671843,0l0,-5.358979l-0.212974,-0.335471l-0.060021,-0.096463l-0.121976,-0.19185l-0.181994,-0.281881l-0.060988,-0.096463l-0.515976,-1.199338l-0.539208,0l-1.394973,1.338671l-1.457897,0l0,-5.207854l-0.968059,-1.217561l0,-0.677376l-0.523722,0l-1.125851,1.229352l-0.267185,0.428716l0,5.937751l-0.865444,0l0,-1.530525l-3.671849,0l0,2.312934l-0.477253,0l0,-0.61521l-0.151983,0l0,-0.428716l-1.82576,0l0,0.428716l-0.140367,0l0,0.61521l-0.410459,0l0,-0.128615l0.24976,-0.276522l0,-0.055734s-0.2546,-0.006432 -0.636015,0.009646l0,-2.945295l-1.850928,0l0,3.183233a4.840295,5.358979 0 0 0 -0.554699,0.175776l0,-0.229365l-1.468543,0l-0.336886,-6.93452l0.193612,0l0.36883,-0.563763l0.201355,0l0,-0.803846l0.096808,0l0,-0.453371l0.245888,0l0,-0.107178s-0.263313,-0.609855 -1.069706,-0.609855l-0.020331,0l0,-0.367626l-0.359148,0l0,-0.332256l0.146177,0l0,-0.154339l-0.193612,0l0,-1.924944l-0.096805,0l0,1.929234l-0.193612,0l0,0.151121l0.146177,0l0,0.331187l-0.35915,0l0,0.371913l-0.020328,0c-0.806393,0 -1.070675,0.609851 -1.070675,0.609851l0,0.107178l0.245888,0l0,0.453371l0.096808,0l0,0.803846l0.201355,0l0.367863,0.563766l0.193612,0l-0.327204,6.341815l-0.796714,-0.184349l0,-1.146821l-1.927404,0l0,-1.89065l-3.218797,0l0,0.750257l-1.607947,0l-0.73282,1.140393l0,3.245396l-0.446276,-0.801701l-3.602148,0l-0.871254,0.915311l0,0.295818l-0.686354,0l0,0.866009l-0.083253,-0.21436l-0.248791,0l0,-0.287241l-2.478231,0l0,0.288313l-0.248791,0l-0.114233,0.293673l0,1.210056l-0.920623,0l0,1.071799l-0.248791,0l-0.539211,-0.428719l-1.444342,0l-0.539211,0.428719l-0.303002,0l0,2.902421l-1.452088,0l0,-8.788724l-0.887709,0l0,0.230434l-1.265254,0l0,0.50696l-0.360117,0l0,2.291501l-0.516943,0.272235l0,0.750257l-0.6941,0l0,2.063208l-1.087131,0l0,0.535898l-0.227493,0l0,0.187563l-1.914822,0l0,5.659083l-0.078413,0l0,-13.161653l-4.366912,0l0,13.698619l-1.001942,0l0,-0.846717l-1.155861,0l0,-4.813436l-2.849,0l0,7.347161l-6.195576,0',
         'm 90.00301,51.100588 -10.056012,0.044424l0,0l-3.191091,-9.764315l-2.228168,6.765903l0,0l-2.325293,-6.746658l1.016727,0l-2.125496,-6.258285l0,0l-2.296347,-6.761335l0,0l-6.128032,18.066164l5.645986,0l0,0l-2.276184,-6.829926l0,0l-3.549067,-10.649346l0,0l-3.606378,11.532641l0,0l0.698381,0l-2.314671,6.516845l0,0l-1.711458,-4.66309l0,0l1.030926,0l-3.507342,-10.587022l0,0l-1.936607,5.704177l0,0l-1.657759,4.882845l0.977639,0l-1.02869,3.121375l-1.882012,-5.334154l0,0l-0.677447,-1.920075l-1.492427,4.254036l0,0l-1.965808,-5.905246l0,0l-3.665758,11.282509l5.324036,0l0,0l-3.518657,-10.184349l0,0l0.92629,0l-3.630575,-10.745717l0,0l-3.50389,10.745717l0,0l0.957168,0l-2.570622,7.917352l0,0l-1.925165,-6.027621l0,0l-2.662748,8.020746l0,0l-1.228844,-3.362066l0.914097,0l-1.416092,-4.15334l0,0l-1.632333,-4.787567l-0.704015,-2.06485l0,0l-2.064095,5.953854l0,0l-2.663154,7.681832l3.552653,0l-3.770921,-11.557956l0,0l-3.383635,10.348615l1.007733,0l-1.897018,5.463888l0,0l-13.19601,0.000033',
         'm 90.00301,51.100588 -10.056012,-0.091944l0,0l-3.191091,-3.124706l-2.228169,-0.548119l0,0l-2.325294,-2.241824l1.016728,1.774395l-2.125497,-4.140254l0,2.36586l-2.296348,-8.280507l0,0l-6.128034,11.829297l5.645987,2.36586l0,0l-2.276185,0l0,0l-3.549068,-2.36586l0,0l-3.606379,-2.988662l0,0l0.698381,0.622803l-2.314672,-2.36586l0,0l-1.711458,-2.397197l0,0l1.030926,1.326293l-3.507343,-4.25228l0,0l-1.936608,-2.135803l0,0l-1.657759,-2.004451l0.97764,5.914649l-1.02869,-5.914649l-1.882012,-6.506113l0,0l-0.677447,-1.774395l-1.492427,-3.548789l0,0l-1.965808,4.45711l0,0l-3.665759,22.158808l5.324038,-26.024453l0,0l-3.518659,8.296351l0,0l0.92629,-2.41867l-3.630576,11.274799l0,0l-3.503891,8.871973l0,0l0.957168,-2.36586l-2.570623,-3.548789l0,0l-1.925166,3.548789l0,0l-2.662749,-5.323184l0,0l-1.228845,1.774395l0.914098,-1.420572l-1.416092,9.109615l0,-7.097578l-1.632334,4.731719l-0.704015,-7.689042l0,0l-2.064096,4.140253l0,0l-2.663154,5.323184l3.552654,-7.097578l-3.770922,7.689044l0,0l-3.383636,0l1.007733,-3.548789l-1.897019,3.548789l0,0l-13.196014,0.091978'
       ]
     }
+  },
+
+  created () {
+    this.fabGithub = fabGithub
+    this.fabTwitter = fabTwitter
+    this.fabCodepen = fabCodepen
+    this.farEnvelope = farEnvelope
   },
 
   mounted () {

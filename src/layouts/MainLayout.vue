@@ -37,10 +37,8 @@ export default {
       routes: [
         { name: 'home', label: 'Home' },
         { name: 'projects', label: 'Projects' },
-        { name: 'about', label: 'About' },
         { name: 'sponsors', label: 'Sponsors' },
-        { name: 'blog', label: 'Blog' },
-        { name: 'contact', label: 'Contact' }
+        { name: 'blog', label: 'Blog' }
       ],
       direction: 'next'
     }

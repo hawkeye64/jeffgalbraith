@@ -7,7 +7,7 @@ On Github, I am known as [@Hawkeye64](https://github.com/hawkeye64). I contribut
 
 If you would like to do a one-time sponsor, you can do it through [PayPal](https://paypal.me/hawkeye64).
       </q-markdown>
-      <q-markdown>
+      <!-- <q-markdown>
 # Platinum Sponsors
       </q-markdown>
       <q-markdown>
@@ -18,7 +18,7 @@ If you would like to do a one-time sponsor, you can do it through [PayPal](https
       </q-markdown>
       <q-markdown>
 # Bronze Sponsors
-      </q-markdown>
+      </q-markdown> -->
       <q-markdown>
 # A Sponsors
       </q-markdown>

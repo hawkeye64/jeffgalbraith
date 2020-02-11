@@ -19,6 +19,7 @@ body
   background-color: var(--main-bg-color)
   font-family: var(--font)
   font-size: .6rem
+  height: calc(100vh - 50px)
 
 #svg-container
   width: 100vw
@@ -30,3 +31,19 @@ body
   color: rgb(126, 216, 255) !important
   border-bottom: 1px dashed rgb(126, 216, 255) !important
   white-space: normal !important
+
+.continue__arrow-down
+  top: calc(100vh - 150px)
+  left: 50%
+  transform: translateX(-50%)
+
+.continue__arrow-down-icon
+  animation: continue-bounce 2s infinite
+
+@keyframes continue-bounce
+  0%, 20%, 50%, 80%, 100%
+    transform: translate3d(0, 0, 0)
+  40%
+    transform: translateY(-30px)
+  60%
+    transform: translateY(-15px)
