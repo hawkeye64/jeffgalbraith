@@ -11,7 +11,7 @@
             style="padding: 0 15px; float: left; width: 200px; height: auto;"
           />
         <q-markdown>
-After all of the above and yu are still with me, you probably want to know a little bit more about me...
+After all of the above and you are still with me, you probably want to know a little bit more about me...
 
 Hi, my name is Jeff Galbraith and I live in Calgary, Alberta CANADA. You may or may not have heard of [Calgary](https://www.google.com/maps/place/Calgary,+AB/@51.0272883,-114.3680132,10z/data=!3m1!4b1!4m5!3m4!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831) before, but it is has been voted [5th most livable places to live in the world](https://calgaryherald.com/news/local-news/calgary-edges-out-vancouver-and-toronto-to-rank-as-worlds-fifth-most-liveable-city-the-economist) and I love it here. Granted, there has been several times in the Winter when we have been the coldest place on Earth with wind-chill reaching -45&#176;C to -50&#176;C. But, I don't let that dampen my spirits when working remotely in software development, at those temperatures, is considered the normal here. The summers are typically 22&#176;C to 26&#176;C and even then, we often see the +30&#176;C weather.
 

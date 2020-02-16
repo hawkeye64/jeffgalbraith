@@ -15,7 +15,7 @@
       </q-tabs>
     </q-header>
 
-    <q-page-container>
+    <q-page-container class="relative-position">
       <vue-page-transition :name="transitionName">
         <router-view />
       </vue-page-transition>
@@ -58,9 +58,11 @@ export default {
       const a = this.getPageIndex(newTab)
       const b = this.getPageIndex(oldTab)
       this.direction = a < b ? 'prev' : 'next'
-      if (this.$router.currentRoute.path.slice(1) !== newTab) {
-        this.$router.push(newTab)
-      }
+      this.$nextTick(() => {
+        if (this.$router.currentRoute.path.slice(1) !== newTab) {
+          this.$router.push(newTab)
+        }
+      })
     }
   },
 
