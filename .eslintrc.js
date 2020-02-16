@@ -14,7 +14,7 @@ module.exports = {
     // https://eslint.vuejs.org/rules/#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
     'plugin:vue/essential',
-    '@vue/standard'
+    'standard'
   ],
 
   // required to lint *.vue files

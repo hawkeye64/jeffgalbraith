@@ -36,7 +36,6 @@ export default {
       tab: 'home',
       routes: [
         { name: 'home', label: 'Home' },
-        { name: 'projects', label: 'Projects' },
         { name: 'sponsors', label: 'Sponsors' },
         { name: 'blog', label: 'Blog' }
       ],
@@ -56,8 +55,8 @@ export default {
 
   watch: {
     tab (newTab, oldTab) {
-      let a = this.getPageIndex(newTab)
-      let b = this.getPageIndex(oldTab)
+      const a = this.getPageIndex(newTab)
+      const b = this.getPageIndex(oldTab)
       this.direction = a < b ? 'prev' : 'next'
       if (this.$router.currentRoute.path.slice(1) !== newTab) {
         this.$router.push(newTab)
@@ -68,7 +67,7 @@ export default {
   methods: {
     getPageIndex (tab) {
       let index = 0
-      for (let route of this.routes) {
+      for (const route of this.routes) {
         if (route.name === tab) {
           return index
         }
