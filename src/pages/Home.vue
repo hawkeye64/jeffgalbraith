@@ -90,21 +90,24 @@ export default {
       return {
         color: this.colors[this.currentIndex],
         textAlign: 'center',
-        fontSize: '16px'
+        fontSize: '16px',
+        transition: 'color 1s linear'
       }
     },
 
     imgStyle () {
       return {
         color: this.colors[this.currentIndex],
-        textAlign: 'center'
+        textAlign: 'center',
+        transition: 'color 1s linear'
       }
     },
 
     svgStyle () {
       return {
         stroke: this.colors[this.currentIndex] + ' !important',
-        fill: this.colors[this.currentIndex] + ' !important'
+        fill: this.colors[this.currentIndex] + ' !important',
+        transition: 'stroke 1s linear, fill 1s linear'
       }
     }
   },

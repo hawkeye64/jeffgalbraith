@@ -10,6 +10,7 @@ body
   font-size: 1rem
   background-color: var(--main-bg-color)
   color: rgb(126, 216, 255)
+  transition: background-color 1s linear
 
 .page-column
   max-width: 600px
@@ -20,11 +21,11 @@ body
   font-family: var(--font)
   font-size: .6rem
   height: calc(100vh - 50px)
-  transition: color 1s linear
+  transition: background-color 1s linear
 
 #svg-container
-  width: 98vw
-  transition: color 1s linear
+  width: 100vw;
+  max-width: 100%;
 
 .inner-container
   position:relative
