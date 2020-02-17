@@ -1,21 +1,24 @@
 <template>
-  <q-card
-    class="column cursor-pointer sponsor"
-    flat
-    bordered
-    @click="onClick"
+  <q-intersection
+    class="cursor-pointer sponsor"
   >
-    <q-card-section
-      class="text-bold"
+    <q-card
+      flat
+      bordered
+      @click="onClick"
     >
-      <div class="text-center" style="width: 100%;">{{ name }}</div>
-      <q-img
-        :src="'https://avatars.githubusercontent.com/' + name"
-        :ratio="1"
-        class="rounded-borders"
-      />
-    </q-card-section>
-  </q-card>
+      <q-card-section
+        class="text-bold"
+      >
+        <div class="text-center" style="width: 100%;">{{ name }}</div>
+        <q-img
+          :src="'https://avatars.githubusercontent.com/' + name"
+          :ratio="1"
+          class="rounded-borders"
+        />
+      </q-card-section>
+    </q-card>
+  </q-intersection>
 </template>
 
 <script>
