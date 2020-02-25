@@ -134,7 +134,7 @@ export default {
           url: 'https://github.com/hawkeye64/json-api-viewer',
           image: 'https://raw.githubusercontent.com/hawkeye64/json-api-viewer/master/images/json-api-viewer--qcalendar.png',
           title: 'Show and search JSON API',
-          blurb: '**Example Viewer** uses the output from **quasar-json-api** (below) to display a searchable documentation viewer of the JSON API data for your component.'
+          blurb: '**JSON API Viewer** uses the output from **quasar-json-api** (below) to display a searchable documentation viewer of the JSON API data for your component.'
         }
       ],
       others: [
