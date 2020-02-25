@@ -8,7 +8,7 @@
     <q-card-section
       class=""
     >
-      <div class="text-center text-bold" style="width: 100%; color: #7ed8ff;">{{ name }}</div>
+      <q-btn no-caps flat :label="name" size="lg" style="width: 100%; color: #7ed8ff;" class="text-center text-bold" @click="openURL(url)" />
       <div class="text-center text-subtitle2" style="width: 100%;">{{ title }}</div>
       <q-img
         v-if="image"
@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import { openURL } from 'quasar'
+
 export default {
   name: 'ComponentShow',
 
@@ -40,6 +42,10 @@ export default {
 
   data () {
     return {}
+  },
+
+  methods: {
+    openURL
   }
 }
 </script>
