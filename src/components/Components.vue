@@ -75,7 +75,7 @@ export default {
           url: 'https://quasarframework.github.io/quasar-ui-qscroller/docs',
           image: 'https://quasarframework.github.io/quasar-ui-qscroller/statics/q-date-time-scroller-ampm.png',
           title: 'QScroller is a barrel-roll scroller',
-          blurb: '**QScroller** is has **string**, **time**, **date**, **time-range**, **date-range** and **date-time** selectors.',
+          blurb: '**QScroller** has **string**, **time**, **date**, **time-range**, **date-range** and **date-time** selectors.',
           imageStyle: 'height: 280px; max-width: 525px;'
         },
         {
