@@ -83,7 +83,7 @@ export default {
           url: 'https://quasarframework.github.io/quasar-ui-qflashcard/docs',
           image: 'statics/q-flashcard.png',
           title: 'QFlashcard for beautiful animations',
-          blurb: '**QFlashcard** can bring your site to life by providing beautiful animatins that can be put together in combos or mashups.'
+          blurb: '**QFlashcard** can bring your site to life by providing beautiful animations that can be put together in combos or mashups.'
         },
         {
           name: 'QPdfviewer',
