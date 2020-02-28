@@ -61,7 +61,8 @@ export default {
         { name: 'digitalit' },
         { name: 'dantrevino' },
         { name: 'nothingismagick' },
-        { name: 'ex-kimura' }
+        { name: 'ex-kimura' },
+        { name: 'agalbenus' }
       ],
       sponsors5: [
         { name: 'g3rd' },
@@ -69,8 +70,7 @@ export default {
         { name: 'ibrainventures' },
         { name: 'Mary-Tyler-Moore' },
         { name: 'patrickmonteiro' },
-        { name: 'sqnz' },
-        { name: 'agalbenus' }
+        { name: 'sqnz' }
       ]
     }
   }
