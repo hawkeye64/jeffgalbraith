@@ -34,7 +34,7 @@ export default {
       keywords: { name: 'keywords', content: 'home full stack developer FOSS contributor camping outdoor enthusiast' },
 
       // Google / Search Engine Tags
-      itempropDescription: { itemprop: 'description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
+      itempropDesc: { itemprop: 'description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
       itempropImage: { itemprop: 'image', content: 'https://www.jeffgalbraith.dev/statics/avatar.jpg' },
 
       // Facebook Meta Tags
