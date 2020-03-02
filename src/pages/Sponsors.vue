@@ -58,9 +58,14 @@ export default {
       keywords: { name: 'keywords', content: 'sponsor' },
       twitterCard: { name: 'twitter:card', content: 'summary' },
       twitterSite: { name: 'twitter:site', content: '@jgalbraith64' },
+      twitterImage: { name: 'twitter:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
       ogType: { name: 'og:type', content: 'article' },
       ogImage: { name: 'og:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
-      ogSiteName: { name: 'og:site_name', content: 'Jeff Galbraith' }
+      ogSiteName: { name: 'og:site_name', content: 'Jeff Galbraith' },
+      ogUrl: { name: 'og:url', content: 'https://jeffgalbraith.dev/#/sponsors' },
+      ogCard: { name: 'og:card', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
+      ogTitle: { name: 'og:title', content: 'Jeff Galbraith Sponsors' },
+      ogDescription: { name: 'og:description', content: 'Github Sponsors for Jeff Galbraith' }
     }
   },
 
