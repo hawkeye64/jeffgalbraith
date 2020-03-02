@@ -16,18 +16,25 @@ export default {
   meta: {
     title: 'Blog - Jeff Galbraith',
     meta: {
-      description: { name: 'description', content: 'Jeff Galbraith\' blog' },
+      description: { name: 'description', content: 'Software Development Blog for Jeff Galbraith' },
       keywords: { name: 'keywords', content: 'blog' },
-      twitterCard: { name: 'twitter:card', content: 'summary' },
-      twitterSite: { name: 'twitter:site', content: '@jgalbraith64' },
-      twitterImage: { name: 'twitter:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
-      ogType: { name: 'og:type', content: 'article' },
-      ogImage: { name: 'og:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
-      ogSiteName: { name: 'og:site_name', content: 'Jeff Galbraith' },
-      ogUrl: { name: 'og:url', content: 'https://jeffgalbraith.dev/#/blog' },
-      ogCard: { name: 'og:card', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
-      ogTitle: { name: 'og:title', content: 'Jeff Galbraith Blog' },
-      ogDescription: { name: 'og:description', content: 'Software Development Blog for Jeff Galbraith' }
+
+      // Google / Search Engine Tags
+      itempropDescription: { itemprop: 'description', content: 'Software Development Blog for Jeff Galbraith' },
+      itempropImage: { itemprop: 'image', content: 'https://www.jeffgalbraith.dev/statics/avatar.jpg' },
+
+      // Facebook Meta Tags
+      ogUrl: { property: 'og:url', content: 'https://www.jeffgalbraith.dev' },
+      ogType: { property: 'og:type', content: 'website' },
+      ogTitle: { property: 'og:title', content: 'Jeff Galbraith' },
+      ogDesc: { property: 'og:description', content: 'Software Development Blog for Jeff Galbraith' },
+      ogImage: { property: 'og:image', content: 'https://www.jeffgalbraith.dev/statics/avatar.jpg' },
+
+      // Twitter Meta Tags
+      twitterCard: { name: 'twitter:card', content: 'summary_large_image' },
+      twitterTitle: { name: 'twitter:title', content: 'Jeff Galbraith' },
+      twitterDesc: { name: 'twitter:description', content: 'Software Development Blog for Jeff Galbraith' },
+      twitterImage: { name: 'twitter:image', content: 'https://www.jeffgalbraith.dev/statics/avatar.jpg' }
     }
   }
 }

@@ -30,19 +30,25 @@ export default {
   meta: {
     title: 'Jeff Galbraith Personal Site',
     meta: {
-      description: { name: 'description', content: 'Jeff Galbraith' },
+      description: { name: 'description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
       keywords: { name: 'keywords', content: 'home full stack developer FOSS contributor camping outdoor enthusiast' },
-      twitterCard: { name: 'twitter:card', content: 'summary' },
-      twitterSite: { name: 'twitter:site', content: '@jgalbraith64' },
-      twitterImage: { name: 'twitter:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
-      ogType: { name: 'og:type', content: 'article' },
-      ogImage: { name: 'og:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
-      ogSiteName: { name: 'og:site_name', content: 'Jeff Galbraith' },
-      ogUrl: { name: 'og:url', content: 'https://jeffgalbraith.dev/#/' },
-      ogCard: { name: 'og:card', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
-      ogTitle: { name: 'og:title', content: 'Jeff Galbraith - Full-stack Developer' },
-      ogDescription: { name: 'og:description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' }
 
+      // Google / Search Engine Tags
+      itempropDescription: { itemprop: 'description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
+      itempropImage: { itemprop: 'image', content: 'https://www.jeffgalbraith.dev/statics/avatar.jpg' },
+
+      // Facebook Meta Tags
+      ogUrl: { property: 'og:url', content: 'https://www.jeffgalbraith.dev' },
+      ogType: { property: 'og:type', content: 'website' },
+      ogTitle: { property: 'og:title', content: 'Jeff Galbraith' },
+      ogDesc: { property: 'og:description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
+      ogImage: { property: 'og:image', content: 'https://www.jeffgalbraith.dev/statics/avatar.jpg' },
+
+      // Twitter Meta Tags
+      twitterCard: { name: 'twitter:card', content: 'summary_large_image' },
+      twitterTitle: { name: 'twitter:title', content: 'Jeff Galbraith' },
+      twitterDesc: { name: 'twitter:description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
+      twitterImage: { name: 'twitter:image', content: 'https://www.jeffgalbraith.dev/statics/avatar.jpg' }
     }
   },
 
