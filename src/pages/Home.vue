@@ -27,6 +27,19 @@ const Snap = require('imports-loader?this=>window,fix=>module.exports=0!snapsvg/
 export default {
   name: 'Home',
 
+  meta: {
+    title: 'Jeff Galbraith Personal Site',
+    meta: {
+      description: { name: 'description', content: 'Jeff Galbraith' },
+      keywords: { name: 'keywords', content: 'home full stack developer FOSS contributor camping outdoor enthusiast' },
+      twitterCard: { name: 'twitter:card', content: 'summary' },
+      twitterSite: { name: 'twitter:site', content: '@jgalbraith64' },
+      ogType: { name: 'og:type', content: 'article' },
+      ogImage: { name: 'og:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
+      ogSiteName: { name: 'og:site_name', content: 'Jeff Galbraith' }
+    }
+  },
+
   components: {
     Profile: () => import('../components/Profile'),
     Components: () => import('../components/Components'),

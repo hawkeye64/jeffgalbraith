@@ -51,6 +51,19 @@ If you would like to do a one-time sponsor, you can do it through [PayPal](https
 export default {
   name: 'Sponsors',
 
+  meta: {
+    title: 'Sponsors - Jeff Galbraith',
+    meta: {
+      description: { name: 'description', content: 'Jeff Galbraith\'s sponsors on Github' },
+      keywords: { name: 'keywords', content: 'sponsor' },
+      twitterCard: { name: 'twitter:card', content: 'summary' },
+      twitterSite: { name: 'twitter:site', content: '@jgalbraith64' },
+      ogType: { name: 'og:type', content: 'article' },
+      ogImage: { name: 'og:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
+      ogSiteName: { name: 'og:site_name', content: 'Jeff Galbraith' }
+    }
+  },
+
   components: {
     Sponsor: () => import('../components/Sponsor')
   },

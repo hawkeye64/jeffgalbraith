@@ -11,6 +11,19 @@ Nothing to see here at this time...
 
 <script>
 export default {
-  name: 'Blog'
+  name: 'Blog',
+
+  meta: {
+    title: 'Blog - Jeff Galbraith',
+    meta: {
+      description: { name: 'description', content: 'Jeff Galbraith\' blog' },
+      keywords: { name: 'keywords', content: 'blog' },
+      twitterCard: { name: 'twitter:card', content: 'summary' },
+      twitterSite: { name: 'twitter:site', content: '@jgalbraith64' },
+      ogType: { name: 'og:type', content: 'article' },
+      ogImage: { name: 'og:image', content: 'https://jeffgalbraith.dev/statics/avatar.jpg' },
+      ogSiteName: { name: 'og:site_name', content: 'Jeff Galbraith' }
+    }
+  }
 }
 </script>
