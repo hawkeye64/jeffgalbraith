@@ -8,7 +8,7 @@
     <q-card-section
       class=""
     >
-      <q-btn no-caps flat :label="name" size="lg" style="width: 100%; color: #7ed8ff;" class="text-center text-bold" @click="openURL(url)" />
+      <q-btn no-caps flat :label="name" size="lg" type="a" :href="url" target="_blank" style="width: 100%; color: #7ed8ff;" class="text-center text-bold" />
       <div class="text-center text-subtitle2" style="width: 100%;">{{ title }}</div>
       <q-img
         v-if="image"
