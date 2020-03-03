@@ -21,9 +21,7 @@
 </template>
 
 <script>
-/* eslint-disable-next-line */
-const Snap = require('imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js')
-
+let Snap
 export default {
   name: 'Home',
 
@@ -76,6 +74,11 @@ export default {
     }
   },
 
+  beforeMount () {
+    /* eslint-disable-next-line */
+    Snap = require('imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js')
+  },
+
   mounted () {
     this.config = {
       duration: 1000,
@@ -103,7 +106,9 @@ export default {
       })
 
     this.morph()
-    this.responsiveWidth(this.$q.screen.width)
+    this.$nextTick(() => {
+      this.responsiveWidth(this.$q.screen.width)
+    })
   },
 
   destroyed () {
