@@ -9,14 +9,22 @@ If you would like to do a one-time sponsor, you can do it through [PayPal](https
       </q-markdown>
       <!-- <q-markdown>
 # Platinum Sponsors
-      </q-markdown>
-      <q-markdown>
+      </q-markdown> -->
+      <!-- <q-markdown>
 # Gold Sponsors
-      </q-markdown>
+      </q-markdown> -->
       <q-markdown>
 # Silver Sponsors
       </q-markdown>
-      <q-markdown>
+      <div class="row items-stretch q-gutter-sm">
+        <sponsor
+          v-for="sponsor in sponsors50"
+          :key="sponsor.name"
+          :name="sponsor.name"
+        />
+      </div>
+
+      <!-- <q-markdown>
 # Bronze Sponsors
       </q-markdown> -->
       <q-markdown>
@@ -82,11 +90,14 @@ export default {
 
   data () {
     return {
+      sponsors50: [
+        { name: 'ex-kimura' }
+      ],
       sponsors10: [
         { name: 'digitalit' },
         { name: 'dantrevino' },
         { name: 'nothingismagick' },
-        { name: 'ex-kimura' },
+        // { name: 'ex-kimura' },
         { name: 'agalbenus' }
       ],
       sponsors5: [
