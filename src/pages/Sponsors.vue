@@ -98,7 +98,8 @@ export default {
         { name: 'dantrevino' },
         { name: 'nothingismagick' },
         // { name: 'ex-kimura' },
-        { name: 'agalbenus' }
+        { name: 'agalbenus' },
+        { name: 'bizready' }
       ],
       sponsors5: [
         { name: 'g3rd' },
