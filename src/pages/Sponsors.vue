@@ -97,8 +97,6 @@ export default {
         { name: 'digitalit' },
         { name: 'dantrevino' },
         { name: 'nothingismagick' },
-        // { name: 'ex-kimura' },
-        { name: 'agalbenus' },
         { name: 'bizready' }
       ],
       sponsors5: [
