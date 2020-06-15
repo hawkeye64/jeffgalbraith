@@ -105,7 +105,8 @@ export default {
         { name: 'ibrainventures' },
         { name: 'Mary-Tyler-Moore' },
         { name: 'patrickmonteiro' },
-        { name: 'sqnz' }
+        { name: 'sqnz' },
+        { name: 'ueda19850603' }
       ]
     }
   }
