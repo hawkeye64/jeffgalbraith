@@ -6,7 +6,7 @@
 # Profile
         </q-markdown>
         <q-img
-            src="statics/avatar.jpg"
+            src="avatar.jpg"
             :ratio="1"
             style="padding: 0 15px; float: left; width: 200px; height: auto;"
           />

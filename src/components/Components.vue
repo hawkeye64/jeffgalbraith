@@ -52,28 +52,28 @@ export default {
         {
           name: 'QCalendar',
           url: 'https://quasarframework.github.io/quasar-ui-qcalendar/docs',
-          image: 'https://quasarframework.github.io/quasar-ui-qcalendar/statics/qcalendar-week-view.png',
-          title: 'Monthly, Weekly, Day, Scheduler, Agenda and Monthly Mini-Mode views',
-          blurb: '**QCalendar** is a powerful calendar component that plugs right into your Quasar application. It allows for viewing of **day** (1-6 days), **week**, **monthly** (including mini-mode), **scheduler** and **agenda** views. Painstaking care has been given to make almost every aspect of QCalendar configurable and/or modifiable in some way and control given to the developer.'
+          image: 'https://quasarframework.github.io/quasar-ui-qcalendar/qcalendar-week-view.png',
+          title: 'Monthly, Weekly, Day, Scheduler, Agenda, Resource and Monthly Mini-Mode views',
+          blurb: '**QCalendar** is a powerful calendar component that plugs right into your Quasar application. It allows for viewing of **day** (1-6 days), **week**, **monthly** (including mini-mode), **scheduler**, **resource** and **agenda** views. Painstaking care has been given to make almost every aspect of QCalendar configurable and/or modifiable in some way and control given to the developer.'
         },
         {
           name: 'QMarkdown',
-          url: 'https://quasarframework.github.io/quasar-ui-qcalendar/docs',
-          image: 'statics/q-markdown.png',
+          url: 'https://quasarframework.github.io/quasar-ui-qmarkdown/docs',
+          image: 'q-markdown.png',
           title: 'QMarkdown provides the ability for your Quasar app to display inline markdown',
           blurb: '**QMarkdown** is a powerful markdown component that has a multitude of markdown commands.'
         },
         {
           name: 'QMediaPlayer',
           url: 'https://quasarframework.github.io/quasar-ui-qmediaplayer/docs',
-          image: 'https://quasarframework.github.io/quasar-ui-qmediaplayer/statics/qmediaplayer.png',
+          image: 'https://quasarframework.github.io/quasar-ui-qmediaplayer/qmediaplayer.png',
           title: 'QMediaPlayer provides the ability for your Quasar app play HTML5 video and audio',
           blurb: '**QMediaPlayer** is an HTML5 video and audio player with subtitle and language support.'
         },
         {
           name: 'QScroller',
           url: 'https://quasarframework.github.io/quasar-ui-qscroller/docs',
-          image: 'https://quasarframework.github.io/quasar-ui-qscroller/statics/q-date-time-scroller-ampm.png',
+          image: 'https://quasarframework.github.io/quasar-ui-qscroller/q-date-time-scroller-ampm.png',
           title: 'QScroller is a barrel-roll scroller',
           blurb: '**QScroller** has **string**, **time**, **date**, **time-range**, **date-range** and **date-time** selectors.',
           imageStyle: 'height: 280px; max-width: 525px;'
@@ -81,21 +81,21 @@ export default {
         {
           name: 'QFlashcard',
           url: 'https://quasarframework.github.io/quasar-ui-qflashcard/docs',
-          image: 'statics/q-flashcard.png',
+          image: 'q-flashcard.png',
           title: 'QFlashcard for beautiful animations',
           blurb: '**QFlashcard** can bring your site to life by providing beautiful animations that can be put together in combos or mashups.'
         },
         {
           name: 'QPdfviewer',
           url: 'https://quasarframework.github.io/app-extension-qpdfviewer/docs',
-          image: 'https://quasarframework.github.io/app-extension-qpdfviewer/statics/qpdfviewer.png',
+          image: 'https://quasarframework.github.io/app-extension-qpdfviewer/qpdfviewer.png',
           title: 'QPdfviewer for HTML5 PDF Viewing capabilities',
           blurb: '**QPdfviewer** allows you to display PDF documents in your Quasar App'
         },
         {
           name: 'QIconPicker',
           url: 'https://quasarframework.github.io/quasar-ui-qiconpicker/docs',
-          image: 'statics/q-icon-picker.png',
+          image: 'q-icon-picker.png',
           title: 'QIconPicker allows your users to pick from icon sets',
           blurb: '**QIconPicker** is a fully customizable icon picker component.',
           imageStyle: 'height: 280px; max-width: 525px;'
@@ -103,21 +103,21 @@ export default {
         {
           name: 'QPlaceholder',
           url: 'https://quasarframework.github.io/app-extension-qplaceholder/docs',
-          image: 'https://quasarframework.github.io/app-extension-qplaceholder/statics/qplaceholder.png',
+          image: 'https://quasarframework.github.io/app-extension-qplaceholder/qplaceholder.png',
           title: 'Use QPlaceholder to display a placeholder before your data arrives from your server',
           blurb: '**QPlaceholder** is a fully customizable placeholder creator.'
         },
         {
           name: 'QZoom',
           url: 'https://quasarframework.github.io/app-extension-qzoom/docs',
-          image: 'statics/q-zoom.png',
+          image: 'q-zoom.png',
           title: 'Use QZoom to zoom in on anything',
           blurb: '**QZoom** is a Medium-like image zoomer, except you can zoom in on anything.'
         },
         {
           name: 'QActivity',
           url: 'https://quasarframework.github.io/app-extension-qactivity',
-          image: 'statics/q-activity.png',
+          image: 'q-activity.png',
           title: 'Create activity timelines',
           blurb: '**QActivity** is an activity timeline manager.',
           imageStyle: 'height: 280px; max-width: 525px;'
