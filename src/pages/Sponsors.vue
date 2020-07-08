@@ -24,9 +24,17 @@ If you would like to do a one-time sponsor, you can do it through [PayPal](https
         />
       </div>
 
-      <!-- <q-markdown>
+      <q-markdown>
 # Bronze Sponsors
-      </q-markdown> -->
+      </q-markdown>
+      <div class="row items-stretch q-gutter-sm">
+        <sponsor
+          v-for="sponsor in sponsors25"
+          :key="sponsor.name"
+          :name="sponsor.name"
+        />
+      </div>
+
       <q-markdown>
 # A Sponsors
       </q-markdown>
@@ -93,9 +101,11 @@ export default {
       sponsors50: [
         { name: 'ex-kimura' }
       ],
+      sponsors25: [
+        { name: 'dantrevino' }
+      ],
       sponsors10: [
         { name: 'digitalit' },
-        { name: 'dantrevino' },
         { name: 'nothingismagick' },
         { name: 'bizready' }
       ],
