@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.8.2",
-    "quasar": "^1.12.8",
+    "quasar": "^1.12.12",
     "snapsvg": "^0.5.1",
     "vue-page-transition": "^0.2.2"
   },
   "devDependencies": {
-    "@quasar/app": "^2.0.2",
+    "@quasar/app": "^2.0.5",
     "@quasar/quasar-app-extension-qmarkdown": "^1.0.29",
     "@vue/eslint-config-standard": "^5.1.2",
     "babel-eslint": "^10.1.0",
