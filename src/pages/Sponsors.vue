@@ -107,7 +107,8 @@ export default {
       sponsors10: [
         { name: 'digitalit' },
         { name: 'nothingismagick' },
-        { name: 'bizready' }
+        { name: 'bizready' },
+        { name: 'gruppler' }
       ],
       sponsors5: [
         { name: 'g3rd' },
