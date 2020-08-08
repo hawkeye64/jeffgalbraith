@@ -8,30 +8,30 @@
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "private": true,
   "scripts": {
-    "build": "quasar build && cp ./src/404.html ./dist/spa",
+    "build": "quasar build",
     "lint": "eslint --ext .js,.vue src",
     "lint-fix": "eslint --ext .js,.vue src --fix",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.8.2",
-    "quasar": "^1.12.12",
+    "@quasar/extras": "^1.9.3",
+    "quasar": "^1.12.13",
     "snapsvg": "^0.5.1",
     "vue-page-transition": "^0.2.2"
   },
   "devDependencies": {
-    "@quasar/app": "^2.0.5",
+    "@quasar/app": "^2.0.6",
     "@quasar/quasar-app-extension-qmarkdown": "^1.0.29",
     "@vue/eslint-config-standard": "^5.1.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.4.0",
+    "eslint": "^7.6.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^6.2.2",
-    "imports-loader": "=0.8.0"
+    "imports-loader": "0.8.0"
   },
   "engines": {
     "node": ">= 10.18.1",
