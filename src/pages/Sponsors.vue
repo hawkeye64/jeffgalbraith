@@ -117,7 +117,8 @@ export default {
         { name: 'Mary-Tyler-Moore' },
         { name: 'patrickmonteiro' },
         { name: 'sqnz' },
-        { name: 'ueda19850603' }
+        { name: 'ueda19850603' },
+        { name: '34fame' }
       ]
     }
   }
