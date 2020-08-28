@@ -107,16 +107,14 @@ export default {
       sponsors10: [
         { name: 'digitalit' },
         { name: 'nothingismagick' },
-        { name: 'bizready' },
         { name: 'gruppler' }
       ],
       sponsors5: [
         { name: 'g3rd' },
-        { name: 'BlueRoseStory' },
         { name: 'ibrainventures' },
-        { name: 'Mary-Tyler-Moore' },
         { name: 'patrickmonteiro' },
         { name: 'sqnz' },
+        // { name: 'rfox12' }, // private
         { name: 'ueda19850603' },
         { name: '34fame' }
       ]
