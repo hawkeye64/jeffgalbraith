@@ -116,7 +116,8 @@ export default {
         { name: 'sqnz' },
         // { name: 'rfox12' }, // private
         { name: 'ueda19850603' },
-        { name: '34fame' }
+        { name: '34fame' },
+        { name: 'AlexanderJohnston' }
       ]
     }
   }
