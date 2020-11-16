@@ -75,8 +75,7 @@ export default {
   },
 
   beforeMount () {
-    /* eslint-disable-next-line */
-    Snap = require('imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js')
+    Snap = require('snapsvg-cjs')
   },
 
   mounted () {

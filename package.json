@@ -1,6 +1,6 @@
 {
   "name": "jeffgalbraith",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Personal Site for Jeff Galbraith",
   "productName": "Jeff Galbraith",
   "cordovaId": "org.cordova.quasar.app",
@@ -14,24 +14,25 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.9.8",
-    "quasar": "^1.14.1",
-    "snapsvg": "^0.5.1",
+    "@quasar/extras": "^1.9.10",
+    "quasar": "^1.14.3",
+    "snapsvg-cjs": "^0.0.6",
     "vue-page-transition": "^0.2.2"
   },
   "devDependencies": {
-    "@quasar/app": "^2.1.1",
-    "@quasar/quasar-app-extension-qmarkdown": "^1.0.33",
+    "@quasar/app": "^2.1.6",
+    "@quasar/quasar-app-extension-qmarkdown": "^1.0.36",
     "@vue/eslint-config-standard": "^5.1.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.11.0",
-    "eslint-loader": "^4.0.2",
+    "eslint": "^7.13.0",
+    "eslint-config-standard": "^16.0.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^7.0.1",
-    "imports-loader": "0.8.0"
+    "eslint-plugin-quasar": "^1.0.0",
+    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "eslint-webpack-plugin": "^2.3.0"
   },
   "engines": {
     "node": ">= 10.18.1",
@@ -47,6 +48,7 @@
     "last 8 ChromeAndroid versions",
     "last 8 FirefoxAndroid versions",
     "last 10 iOS versions",
-    "last 5 Opera versions"
+    "last 5 Opera versions",
+    "ie >= 11"
   ]
 }
