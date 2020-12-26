@@ -117,7 +117,8 @@ export default {
         // { name: 'rfox12' }, // private
         { name: 'ueda19850603' },
         { name: '34fame' },
-        { name: 'AlexanderJohnston' }
+        { name: 'AlexanderJohnston' },
+        { name: 'flowt-au' }
       ]
     }
   }
