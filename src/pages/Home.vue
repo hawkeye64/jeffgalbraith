@@ -171,17 +171,20 @@ export default {
           fontSize: '10px',
           letterSpacing: '1px'
         })
-      } else if (width < 485) {
+      }
+      else if (width < 485) {
         this.t.attr({
           fontSize: '12px',
           letterSpacing: '2px'
         })
-      } else if (width < 645) {
+      }
+      else if (width < 645) {
         this.t.attr({
           fontSize: '14px',
           letterSpacing: '3px'
         })
-      } else if (width < 745) {
+      }
+      else if (width < 745) {
         this.t.attr({
           fontSize: '16px',
           letterSpacing: '5px'

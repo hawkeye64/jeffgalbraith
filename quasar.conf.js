@@ -64,12 +64,20 @@ module.exports = function (/* ctx */) {
       // extractCSS: false,
 
       // https://quasar.dev/quasar-cli/handling-webpack
-      extendWebpack (cfg) {
-        cfg.plugins.push(new ESLintPlugin({
-          files: './src',
-          extensions: ['js', 'vue']
-        }))
-      },
+      // extendWebpack (cfg) {
+      //   cfg.plugins.push(new ESLintPlugin({
+      //     files: './src',
+      //     extensions: ['js', 'vue']
+      //   }))
+      // },
+
+      chainWebpack (chain) {
+        chain.plugin('eslint-webpack-plugin')
+          .use(ESLintPlugin, [{
+            extensions: ['js', 'vue'],
+            exclude: ['node_modules']
+          }])
+      }
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
