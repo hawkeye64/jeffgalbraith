@@ -107,7 +107,8 @@ export default {
       sponsors10: [
         { name: 'digitalit' },
         { name: 'nothingismagick' },
-        { name: 'gruppler' }
+        { name: 'gruppler' },
+        { name: 'flowt-au' }
       ],
       sponsors5: [
         { name: 'g3rd' },
@@ -117,8 +118,7 @@ export default {
         // { name: 'rfox12' }, // private
         { name: 'ueda19850603' },
         { name: '34fame' },
-        { name: 'AlexanderJohnston' },
-        { name: 'flowt-au' }
+        { name: 'AlexanderJohnston' }
       ]
     }
   }
