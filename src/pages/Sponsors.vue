@@ -108,7 +108,8 @@ export default {
         { name: 'digitalit' },
         { name: 'nothingismagick' },
         { name: 'gruppler' },
-        { name: 'flowt-au' }
+        { name: 'flowt-au' },
+        { name: 'agalbenus' }
       ],
       sponsors5: [
         { name: 'g3rd' },
