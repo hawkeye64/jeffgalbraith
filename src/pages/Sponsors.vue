@@ -99,7 +99,8 @@ export default {
   data () {
     return {
       sponsors50: [
-        { name: 'ex-kimura' }
+        { name: 'ex-kimura' },
+        { name: 'mfyang' }
       ],
       sponsors25: [
         { name: 'dantrevino' }
