@@ -110,7 +110,8 @@ export default {
         { name: 'nothingismagick' },
         { name: 'gruppler' },
         { name: 'flowt-au' },
-        { name: 'agalbenus' }
+        { name: 'agalbenus' },
+        { name: 'iohzrd' }
       ],
       sponsors5: [
         { name: 'g3rd' },
