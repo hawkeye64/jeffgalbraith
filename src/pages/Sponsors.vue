@@ -99,28 +99,28 @@ export default {
   data () {
     return {
       sponsors50: [
-        { name: 'ex-kimura' },
         { name: 'mfyang' }
       ],
       sponsors25: [
         { name: 'dantrevino' }
       ],
       sponsors10: [
+        { name: 'ex-kimura' },
         { name: 'digitalit' },
         { name: 'nothingismagick' },
         { name: 'gruppler' },
-        { name: 'flowt-au' },
-        { name: 'agalbenus' },
-        { name: 'iohzrd' }
+        { name: 'flowt-au' }
+        // { name: 'agalbenus' },
+        // { name: 'iohzrd' }
       ],
       sponsors5: [
-        { name: 'g3rd' },
+        // { name: 'g3rd' },
         { name: 'ibrainventures' },
         { name: 'patrickmonteiro' },
         { name: 'sqnz' },
         // { name: 'rfox12' }, // private
         { name: 'ueda19850603' },
-        { name: '34fame' },
+        // { name: '34fame' },
         { name: 'AlexanderJohnston' },
         { name: 'm0jimo' }
       ]
