@@ -7,7 +7,13 @@ const routes = [
       { path: '', alias: 'home', component: () => import('pages/Home.vue') },
       { path: 'projects', component: () => import('pages/Projects.vue') },
       { path: 'sponsors', component: () => import('pages/Sponsors.vue') },
-      { path: 'blog', component: () => import('pages/Blog.vue') }
+      {
+        path: 'blog',
+        beforeEnter () {
+          location.href = 'https://blog.jeffgalbraith.dev'
+        }
+        // component: () => import('pages/Blog.vue')
+      }
     ]
   },
 
