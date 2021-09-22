@@ -1303,10 +1303,10 @@
     core-js "^3.6.5"
     core-js-compat "^3.6.5"
 
-"@quasar/extras@^1.10.12":
-  version "1.10.12"
-  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.10.12.tgz#a0724bce058de6cea44519be45ab2af35496a88b"
-  integrity sha512-CVSxLw/Z6kaEYrooJX7mpby6YDm0eSa8D9/1+KEfiTYfLrPE4wTRuNGKN5liuLtVhFMdGrEkj6T6DInKpQWW9A==
+"@quasar/extras@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.11.0.tgz#dca867bc3748047d8730f94b13492a39af51a9ce"
+  integrity sha512-Uyi2U4XFmpqa+46MJCG2zP5SCjeLRZYx9DkfK5wHNyUYryUJ8t4P1DaAvdYPoPYGG7uyPLL+2pF83rMHHUiokA==
 
 "@quasar/fastclick@1.1.4":
   version "1.1.4"
@@ -4125,10 +4125,10 @@ eslint-plugin-standard@^5.0.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-5.0.0.tgz#c43f6925d669f177db46f095ea30be95476b1ee4"
   integrity sha512-eSIXPc9wBM4BrniMzJRBm2uoVuXz2EPa+NXPk2+itrVt+r5SbKFERx/IgrK/HmfjddyKVz2f+j+7gBRvu19xLg==
 
-eslint-plugin-vue@^7.17.0:
-  version "7.17.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.17.0.tgz#41e0bdb5effca5ee26f087f924be987eb41ef573"
-  integrity sha512-Rq5R2QetDCgC+kBFQw1+aJ5B93tQ4xqZvoCUxuIzwTonngNArsdP8ChM8PowIzsJvRtWl4ltGh/bZcN3xhFWSw==
+eslint-plugin-vue@^7.18.0:
+  version "7.18.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.18.0.tgz#02a452142330c7f27c242db21a1b9e25238540f6"
+  integrity sha512-ceDXlXYMMPMSXw7tdKUR42w9jlzthJGJ3Kvm3YrZ0zuQfvAySNxe8sm6VHuksBW0+060GzYXhHJG6IHVOfF83Q==
   dependencies:
     eslint-utils "^2.1.0"
     natural-compare "^1.4.0"
@@ -7985,10 +7985,10 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
-quasar@^1.15.21:
-  version "1.15.21"
-  resolved "https://registry.yarnpkg.com/quasar/-/quasar-1.15.21.tgz#3336e03a953be0286baef3a3865dc6e276b67fdc"
-  integrity sha512-4LP6/ckeNFjH1qRHbHBCjnq8jpuJAUzpGNVD4Py4+Qjj4Wuzo3qOeA4ujvQ2VPTFeKTydBci8DfhuhaaMBfsZw==
+quasar@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/quasar/-/quasar-1.16.0.tgz#b3eeba6c03860279fa6d423aeb0b83c884517481"
+  integrity sha512-w+XajlXYi1dRYHHD/oRydTv1G3G2edtZ+tWJjnPk4vYUlllUiVsredqrBwqoOogn8qRhpLVS6Og6pona+zIg5A==
 
 query-string@^4.1.0:
   version "4.3.4"
