@@ -33,20 +33,20 @@ export default {
 
       // Google / Search Engine Tags
       itempropDesc: { itemprop: 'description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
-      itempropImage: { itemprop: 'image', content: 'https://www.jeffgalbraith.dev/avatar.jpg' },
+      itempropImage: { itemprop: 'image', content: 'https://jeffgalbraith.dev/avatar.jpg' },
 
       // Facebook Meta Tags
-      ogUrl: { property: 'og:url', content: 'https://www.jeffgalbraith.dev' },
+      ogUrl: { property: 'og:url', content: 'https://jeffgalbraith.dev' },
       ogType: { property: 'og:type', content: 'website' },
       ogTitle: { property: 'og:title', content: 'Jeff Galbraith' },
       ogDesc: { property: 'og:description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
-      ogImage: { property: 'og:image', content: 'https://www.jeffgalbraith.dev/avatar.jpg' },
+      ogImage: { property: 'og:image', content: 'https://jeffgalbraith.dev/avatar.jpg' },
 
       // Twitter Meta Tags
       twitterCard: { name: 'twitter:card', content: 'summary_large_image' },
       twitterTitle: { name: 'twitter:title', content: 'Jeff Galbraith' },
       twitterDesc: { name: 'twitter:description', content: 'Jeff Galbraith - Full-stack developer, FOSS contributor and Camping and Outdoor Enthusiast.' },
-      twitterImage: { name: 'twitter:image', content: 'https://www.jeffgalbraith.dev/avatar.jpg' }
+      twitterImage: { name: 'twitter:image', content: 'https://jeffgalbraith.dev/avatar.jpg' }
     }
   },
 

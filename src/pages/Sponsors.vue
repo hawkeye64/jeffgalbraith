@@ -75,20 +75,20 @@ export default {
 
       // Google / Search Engine Tags
       itempropDescription: { itemprop: 'description', content: 'Jeff Galbraith\'s sponsors on Github' },
-      itempropImage: { itemprop: 'image', content: 'https://www.jeffgalbraith.dev/avatar.jpg' },
+      itempropImage: { itemprop: 'image', content: 'https://jeffgalbraith.dev/avatar.jpg' },
 
       // Facebook Meta Tags
-      ogUrl: { property: 'og:url', content: 'https://www.jeffgalbraith.dev' },
+      ogUrl: { property: 'og:url', content: 'https://jeffgalbraith.dev' },
       ogType: { property: 'og:type', content: 'website' },
       ogTitle: { property: 'og:title', content: 'Jeff Galbraith' },
       ogDesc: { property: 'og:description', content: 'Jeff Galbraith\'s sponsors on Github' },
-      ogImage: { property: 'og:image', content: 'https://www.jeffgalbraith.dev/avatar.jpg' },
+      ogImage: { property: 'og:image', content: 'https://jeffgalbraith.dev/avatar.jpg' },
 
       // Twitter Meta Tags
       twitterCard: { name: 'twitter:card', content: 'summary_large_image' },
       twitterTitle: { name: 'twitter:title', content: 'Jeff Galbraith' },
       twitterDesc: { name: 'twitter:description', content: 'Jeff Galbraith\'s sponsors on Github' },
-      twitterImage: { name: 'twitter:image', content: 'https://www.jeffgalbraith.dev/avatar.jpg' }
+      twitterImage: { name: 'twitter:image', content: 'https://jeffgalbraith.dev/avatar.jpg' }
     }
   },
 
@@ -99,7 +99,8 @@ export default {
   data () {
     return {
       sponsors50: [
-        { name: 'mfyang' }
+        { name: 'mfyang' },
+        { name: 'jubalj' }
       ],
       sponsors25: [
         { name: 'dantrevino' }
@@ -116,7 +117,7 @@ export default {
       sponsors5: [
         // { name: 'g3rd' },
         { name: 'ibrainventures' },
-        { name: 'patrickmonteiro' },
+        // { name: 'patrickmonteiro' },
         { name: 'sqnz' },
         // { name: 'rfox12' }, // private
         { name: 'ueda19850603' },
