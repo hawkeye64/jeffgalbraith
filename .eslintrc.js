@@ -7,15 +7,11 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module', // Allows for the use of imports
-    ecmaFeatures: {
-      jsx: true
-    }
+    sourceType: 'module' // Allows for the use of imports
   },
 
   env: {
-    browser: true,
-    es6: true
+    browser: true
   },
 
   // Rules order is important, please avoid shuffling them
