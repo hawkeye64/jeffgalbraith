@@ -110,9 +110,10 @@ export default {
         { name: 'digitalit' },
         { name: 'nothingismagick' },
         { name: 'gruppler' },
-        { name: 'flowt-au' }
+        { name: 'flowt-au' },
         // { name: 'agalbenus' },
         // { name: 'iohzrd' }
+        { name: 'egyel' }
       ],
       sponsors5: [
         // { name: 'g3rd' },
@@ -122,7 +123,7 @@ export default {
         // { name: 'rfox12' }, // private
         { name: 'ueda19850603' },
         // { name: '34fame' },
-        { name: 'AlexanderJohnston' },
+        // { name: 'AlexanderJohnston' },
         { name: 'm0jimo' }
       ]
     }
