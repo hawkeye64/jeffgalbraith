@@ -10,7 +10,12 @@
       <q-card-section
         class="text-bold"
       >
-        <div class="text-center" style="width: 100%;">{{ name }}</div>
+        <div
+          class="text-center"
+          style="width: 100%;"
+        >
+          {{ name }}
+        </div>
         <q-img
           :src="'https://avatars.githubusercontent.com/' + name"
           :ratio="1"

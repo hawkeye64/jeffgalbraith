@@ -1,21 +1,28 @@
 <template>
   <main class="flex flex-start justify-center inset-shadow">
-    <div class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1" style="max-width: 800px; width: 100%;">
+    <div
+      class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1"
+      style="max-width: 800px; width: 100%;"
+    >
       <h3 style="margin-top: 20px; text-align: center;">Sponsors</h3>
+      <!-- eslint-disable vue/html-indent -->
       <q-markdown>
 On Github, I am known as [@Hawkeye64](https://github.com/hawkeye64). I contribute to FOSS, a lot! And, I am very fortunate to have sponsors. Github doubles your donations in your first year of the Github Sponsors program, which is also very fortunate. If you would like to sponsor me on Github, click [here](https://github.com/sponsors/hawkeye64).
 
 If you would like to do a one-time sponsor, you can do it through [PayPal](https://paypal.me/hawkeye64).
-      </q-markdown>
+    </q-markdown>
+    <!-- eslint-enable vue/html-indent -->
       <!-- <q-markdown>
 # Platinum Sponsors
       </q-markdown> -->
       <!-- <q-markdown>
 # Gold Sponsors
       </q-markdown> -->
+      <!-- eslint-disable vue/html-indent -->
       <q-markdown>
 # Silver Sponsors
       </q-markdown>
+      <!-- eslint-enable vue/html-indent -->
       <div class="row items-stretch q-gutter-sm">
         <sponsor
           v-for="sponsor in sponsors50"
@@ -24,9 +31,11 @@ If you would like to do a one-time sponsor, you can do it through [PayPal](https
         />
       </div>
 
+      <!-- eslint-disable vue/html-indent -->
       <q-markdown>
 # Bronze Sponsors
       </q-markdown>
+      <!-- eslint-enable vue/html-indent -->
       <div class="row items-stretch q-gutter-sm">
         <sponsor
           v-for="sponsor in sponsors25"
@@ -35,9 +44,11 @@ If you would like to do a one-time sponsor, you can do it through [PayPal](https
         />
       </div>
 
+      <!-- eslint-disable vue/html-indent -->
       <q-markdown>
 # A Sponsors
       </q-markdown>
+      <!-- eslint-enable vue/html-indent -->
       <div class="row items-stretch q-gutter-sm">
         <sponsor
           v-for="sponsor in sponsors10"
@@ -46,9 +57,11 @@ If you would like to do a one-time sponsor, you can do it through [PayPal](https
         />
       </div>
 
+      <!-- eslint-disable vue/html-indent -->
       <q-markdown>
 # B Sponsors
       </q-markdown>
+      <!-- eslint-enable vue/html-indent -->
       <div class="row items-stretch q-gutter-sm">
         <sponsor
           v-for="sponsor in sponsors5"
@@ -58,12 +71,13 @@ If you would like to do a one-time sponsor, you can do it through [PayPal](https
           :image="sponsor.image"
         />
       </div>
-
     </div>
   </main>
 </template>
 
 <script>
+import Sponsor from '../components/Sponsor'
+
 export default {
   name: 'Sponsors',
 
@@ -93,7 +107,7 @@ export default {
   },
 
   components: {
-    Sponsor: () => import('../components/Sponsor')
+    Sponsor
   },
 
   data () {

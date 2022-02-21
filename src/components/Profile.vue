@@ -1,15 +1,21 @@
 <template>
   <div class="row full-width justify-center">
     <div class="full-width page-column">
-      <div class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1" style="max-width: 800px; width: 100%;">
+      <div
+        class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1"
+        style="max-width: 800px; width: 100%;"
+      >
+        <!-- eslint-disable vue/html-indent -->
         <q-markdown>
 # Profile
         </q-markdown>
+        <!-- eslint-enable vue/html-indent -->
         <q-img
-            src="avatar.jpg"
-            :ratio="1"
-            style="padding: 0 15px; float: left; width: 200px; height: auto;"
-          />
+          src="avatar.jpg"
+          :ratio="1"
+          style="padding: 0 15px; float: left; width: 200px; height: auto;"
+        />
+        <!-- eslint-disable vue/html-indent -->
         <q-markdown>
 After all of the above and you are still with me, you probably want to know a little bit more about me...
 
@@ -25,6 +31,7 @@ Speaking of which, C/C++ had been my main languages since 1988, when I first sta
 
 Now, I pretty much do web development. Lots of work with joy and fulfullment in my day-to-day life. I am also, what I call, a part-time Open-Sourcerer and have been on the Core Team of [Quasar Framework](https://github.com/quasarframework) since 2018.
         </q-markdown>
+        <!-- eslint-enable vue/html-indent -->
       </div>
     </div>
   </div>

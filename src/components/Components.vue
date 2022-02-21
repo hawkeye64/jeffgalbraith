@@ -1,15 +1,22 @@
 <template>
   <div class="row full-width justify-center">
     <div class="page-column">
-      <div class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1 q-gutter-sm" style="max-width: 800px; width: 100%;">
+      <div
+        class="q-pa-md col-12-sm col-8-md col-6-lg shadow-1 q-gutter-sm"
+        style="max-width: 800px; width: 100%;"
+      >
+        <!-- eslint-disable vue/html-indent -->
         <q-markdown>
 # Components
 
 My passion is creating components. Check out some of the ones I have done.
         </q-markdown>
-        <template v-for="item in items">
+        <!-- eslint-enable vue/html-indent -->
+        <template
+          v-for="item in items"
+          :key="item.name"
+        >
           <component-show
-            :key="item.name"
             :name="item.name"
             :url="item.url"
             :image="item.image"
@@ -18,32 +25,39 @@ My passion is creating components. Check out some of the ones I have done.
             :image-style="item.imageStyle"
           />
         </template>
+        <!-- eslint-disable vue/html-indent -->
         <q-markdown>
 Other projects:
         </q-markdown>
-        <template v-for="other in others">
+        <!-- eslint-enable vue/html-indent -->
+        <template
+          v-for="other in others"
+          :key="other.name"
+        >
           <component-show
-            :key="other.name"
             :name="other.name"
             :url="other.url"
             :title="other.title"
             :blurb="other.blurb"
           />
         </template>
+        <!-- eslint-disable vue/html-indent -->
         <q-markdown class="q-py-xl">
 If you have an idea for a component or would like to pay to have a (private) component done, feel free to contact me for a quote.
         </q-markdown>
+        <!-- eslint-enable vue/html-indent -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import ComponentShow from './ComponentShow'
 export default {
   name: 'Components',
 
   components: {
-    ComponentShow: () => import('./ComponentShow')
+    ComponentShow
   },
 
   data () {

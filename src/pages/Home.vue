@@ -1,26 +1,37 @@
 <template>
   <q-page class="flex flex-start justify-center inset-shadow">
-
-    <div id="wrapper" class="relative-position">
+    <div
+      id="wrapper"
+      class="relative-position"
+    >
       <div class="inner-container">
-        <svg id="svg-container" :style="svgStyle">
-        </svg>
+        <svg
+          id="svg-container"
+          :style="svgStyle"
+        />
       </div>
       <p :style="style">Calgary, Alberta CANADA<br><br>Full-Stack Developer<br>FOSS Contributor<br>Camping and Outdoor Enthusiast</p>
 
       <div class="continue__arrow-down row justify-center absolute">
-        <q-icon class="continue__arrow-down-icon q-mt-xl" name="expand_more" size="50px" />
+        <q-icon
+          class="continue__arrow-down-icon q-mt-xl"
+          name="expand_more"
+          size="50px"
+        />
       </div>
     </div>
 
     <components />
     <profile />
     <social />
-
   </q-page>
 </template>
 
 <script>
+import Profile from '../components/Profile'
+import Components from '../components/Components'
+import Social from '../components/Social'
+
 let Snap
 export default {
   name: 'Home',
@@ -51,9 +62,9 @@ export default {
   },
 
   components: {
-    Profile: () => import('../components/Profile'),
-    Components: () => import('../components/Components'),
-    Social: () => import('../components/Social')
+    Profile,
+    Components,
+    Social
   },
 
   data () {
@@ -74,6 +85,39 @@ export default {
     }
   },
 
+  computed: {
+    style () {
+      return {
+        color: this.colors[ this.currentIndex ],
+        textAlign: 'center',
+        fontSize: '16px',
+        transition: 'color 1s linear'
+      }
+    },
+
+    imgStyle () {
+      return {
+        color: this.colors[ this.currentIndex ],
+        textAlign: 'center',
+        transition: 'color 1s linear'
+      }
+    },
+
+    svgStyle () {
+      return {
+        stroke: this.colors[ this.currentIndex ] + ' !important',
+        fill: this.colors[ this.currentIndex ] + ' !important',
+        transition: 'stroke 1s linear, fill 1s linear'
+      }
+    }
+  },
+
+  watch: {
+    '$q.screen.width' (val) {
+      this.responsiveWidth(val)
+    }
+  },
+
   beforeMount () {
     Snap = require('snapsvg-cjs')
   },
@@ -91,7 +135,7 @@ export default {
         height: 340
       })
 
-    this.p = this.s.path(this.paths[0])
+    this.p = this.s.path(this.paths[ 0 ])
       .attr({
         fill: 'none',
         strokeWidth: 0.5
@@ -110,41 +154,8 @@ export default {
     })
   },
 
-  destroyed () {
+  unmounted () {
     clearInterval(this.intervalId)
-  },
-
-  computed: {
-    style () {
-      return {
-        color: this.colors[this.currentIndex],
-        textAlign: 'center',
-        fontSize: '16px',
-        transition: 'color 1s linear'
-      }
-    },
-
-    imgStyle () {
-      return {
-        color: this.colors[this.currentIndex],
-        textAlign: 'center',
-        transition: 'color 1s linear'
-      }
-    },
-
-    svgStyle () {
-      return {
-        stroke: this.colors[this.currentIndex] + ' !important',
-        fill: this.colors[this.currentIndex] + ' !important',
-        transition: 'stroke 1s linear, fill 1s linear'
-      }
-    }
-  },
-
-  watch: {
-    '$q.screen.width' (val) {
-      this.responsiveWidth(val)
-    }
   },
 
   methods: {
@@ -157,7 +168,7 @@ export default {
 
         this.p.animate({
           // stroke: this.colors[this.currentIndex],
-          d: this.paths[this.currentIndex]
+          d: this.paths[ this.currentIndex ]
         }, this.config.duration, window.mina.easeinout)
         // this.t.animate({
         //   fill: this.colors[this.currentIndex]

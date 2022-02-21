@@ -2,8 +2,8 @@
   <q-layout view="lHh Lpr lFf">
     <q-header>
       <q-tabs
-        :breakpoint="500"
         v-model="tab"
+        :breakpoint="500"
         class="text-light-blue-11 bg-black"
       >
         <q-tab
@@ -16,9 +16,7 @@
     </q-header>
 
     <q-page-container class="relative-position">
-      <vue-page-transition :name="transitionName">
-        <router-view />
-      </vue-page-transition>
+      <router-view />
     </q-page-container>
   </q-layout>
 </template>
@@ -43,15 +41,11 @@ export default {
     }
   },
 
-  mounted () {
-    this.tab = this.$router.currentRoute.path.slice(1)
-  },
-
-  computed: {
-    transitionName () {
-      return (this.direction === 'prev' ? 'fade-in-right' : 'fade-in-left')
-    }
-  },
+  // computed: {
+  //   transitionName () {
+  //     return (this.direction === 'prev' ? 'fade-in-right' : 'fade-in-left')
+  //   }
+  // },
 
   watch: {
     tab (newTab, oldTab) {
@@ -59,11 +53,15 @@ export default {
       const b = this.getPageIndex(oldTab)
       this.direction = a < b ? 'prev' : 'next'
       this.$nextTick(() => {
-        if (this.$router.currentRoute.path.slice(1) !== newTab) {
+        if (this.$router.currentRoute.value.path.slice(1) !== newTab) {
           this.$router.push(newTab)
         }
       })
     }
+  },
+
+  mounted () {
+    this.tab = this.$router.currentRoute.value.path.slice(1)
   },
 
   methods: {
