@@ -1,12 +1,12 @@
 // app global css in SCSS form
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 
-@import 'markdown/index';
+@import "markdown/index";
 
 :root {
   --main-bg-color: #070707;
-  --font: 'Quicksand', sans-serif;
+  --font: "Quicksand", sans-serif;
 }
 
 body {

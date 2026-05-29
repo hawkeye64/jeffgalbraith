@@ -1,41 +1,43 @@
-# Quasar App (jeffgalbraith-dev)
+# Jeff Galbraith
 
-A Quasar Project
+Jeff Galbraith's personal website, built with Quasar and Vite.
 
 ## Install the dependencies
+
 ```bash
-yarn
-# or
-npm install
+pnpm install
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
 
+```bash
+pnpm dev
+```
 
 ### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
 
+```bash
+pnpm lint
+```
 
 ### Format the files
+
 ```bash
-yarn format
-# or
-npm run format
+pnpm format
 ```
 
+### Run verification
 
+```bash
+pnpm verify
+```
 
 ### Build the app for production
+
 ```bash
-quasar build
+pnpm build
 ```
 
 ### Customize the configuration
+
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).

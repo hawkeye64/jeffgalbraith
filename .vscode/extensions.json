@@ -1,12 +1,13 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
+    "oxc.oxc-vscode",
     "vue.volar",
     "wayou.vscode-todo-highlight"
   ],
   "unwantedRecommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
     "octref.vetur",
     "hookyqr.beautify",
     "dbaeumer.jshint",
