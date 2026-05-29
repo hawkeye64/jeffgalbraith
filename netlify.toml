@@ -1,0 +1,12 @@
+[build]
+command = "pnpm build"
+publish = "dist/spa"
+
+[build.environment]
+NODE_VERSION = "24"
+PNPM_VERSION = "11.4.0"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
