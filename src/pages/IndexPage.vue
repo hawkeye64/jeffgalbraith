@@ -6,12 +6,12 @@
       </div>
 
       <div>
-        <p :style="style">Calgary, Alberta CANADA</p>
+        <p :style="style">Bassano, Alberta, Canada</p>
       </div>
 
       <div class="col full-width row justify-center q-my-lg">
         <q-avatar size="200px">
-          <img src="/jeff.png" alt="User Avatar" />
+          <img src="/jeff.png" alt="Jeff Galbraith portrait" />
         </q-avatar>
       </div>
 
