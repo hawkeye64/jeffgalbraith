@@ -48,6 +48,13 @@ body {
   top: calc(100vh - 150px);
   left: 50%;
   transform: translateX(-50%);
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
+.continue__arrow-down--hidden {
+  opacity: 0;
 }
 
 .continue__arrow-down-icon {

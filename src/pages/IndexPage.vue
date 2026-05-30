@@ -31,6 +31,8 @@
       v-if="$q.platform.is.desktop"
       :style="style"
       class="continue__arrow-down row justify-center absolute"
+      :class="{ 'continue__arrow-down--hidden': hasScrolled }"
+      aria-hidden="true"
     >
       <q-icon class="continue__arrow-down-icon q-mt-xl" name="expand_more" size="50px" />
     </div>
@@ -55,6 +57,7 @@ const $q = useQuasar();
 
 const currentIndex = ref(0);
 const intervalId = ref();
+const hasScrolled = ref(false);
 //const currentColor = '#00A0F7';
 const colors = ref([
   "#FF8C0A", // orange
@@ -121,12 +124,20 @@ onMounted(() => {
   morph();
   nextTick(() => {
     responsiveWidth($q.screen.width);
+    updateScrollState();
   });
+
+  window.addEventListener("scroll", updateScrollState, { passive: true });
 });
 
 onBeforeUnmount(() => {
   clearInterval(intervalId.value);
+  window.removeEventListener("scroll", updateScrollState);
 });
+
+function updateScrollState() {
+  hasScrolled.value = window.scrollY > 24;
+}
 
 function morph() {
   intervalId.value = window.setInterval(() => {
