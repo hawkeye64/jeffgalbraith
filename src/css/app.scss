@@ -66,7 +66,7 @@ body {
 }
 
 .site-nav {
-  .q-btn {
+  .q-btn:not(.site-btn--primary) {
     color: var(--jg-muted);
     font-weight: 700;
   }
@@ -84,9 +84,16 @@ body {
 }
 
 .site-btn--primary {
-  color: #061119;
-  background: linear-gradient(135deg, var(--jg-accent), #eaffff);
-  box-shadow: 0 12px 34px rgba(126, 216, 255, 0.24);
+  color: #03131d;
+  background: linear-gradient(135deg, #35c8ff, #c4f7ff);
+  box-shadow:
+    0 12px 34px rgba(126, 216, 255, 0.24),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+}
+
+.site-btn--primary:hover {
+  color: #020b12;
+  background: linear-gradient(135deg, #7ed8ff, #ffffff);
 }
 
 .site-btn--ghost {
