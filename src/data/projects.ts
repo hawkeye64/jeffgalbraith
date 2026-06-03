@@ -24,6 +24,10 @@ export const featuredProjects: ProjectEntry[] = [
     tags: ["calendar", "scheduling", "Vue component"],
     links: [
       {
+        label: "Docs",
+        href: "https://qcalendar.netlify.app/",
+      },
+      {
         label: "GitHub",
         href: "https://github.com/quasarframework/quasar-ui-qcalendar",
       },
@@ -54,6 +58,10 @@ export const featuredProjects: ProjectEntry[] = [
     tags: ["markdown", "docs", "content"],
     links: [
       {
+        label: "Docs",
+        href: "https://qmarkdown.netlify.app/",
+      },
+      {
         label: "GitHub",
         href: "https://github.com/quasarframework/quasar-ui-qmarkdown",
       },
@@ -69,6 +77,10 @@ export const featuredProjects: ProjectEntry[] = [
     tags: ["icons", "search", "forms"],
     links: [
       {
+        label: "Docs",
+        href: "https://qiconpicker.netlify.app/",
+      },
+      {
         label: "GitHub",
         href: "https://github.com/quasarframework/quasar-ui-qiconpicker",
       },
@@ -82,6 +94,10 @@ export const featuredProjects: ProjectEntry[] = [
     icon: "layers",
     tags: ["overlay", "layers", "UI"],
     links: [
+      {
+        label: "Docs",
+        href: "https://qoverlay.netlify.app/",
+      },
       {
         label: "GitHub",
         href: "https://github.com/quasarframework/quasar-ui-qoverlay",
@@ -111,6 +127,10 @@ export const featuredProjects: ProjectEntry[] = [
     tags: ["media", "player", "components"],
     links: [
       {
+        label: "Docs",
+        href: "https://qmediaplayer.netlify.app/",
+      },
+      {
         label: "GitHub",
         href: "https://github.com/quasarframework/quasar-ui-qmediaplayer",
       },
@@ -125,6 +145,10 @@ export const featuredProjects: ProjectEntry[] = [
     icon: "style",
     tags: ["learning", "cards", "education"],
     links: [
+      {
+        label: "Docs",
+        href: "https://qflashcard.netlify.app/",
+      },
       {
         label: "GitHub",
         href: "https://github.com/quasarframework/quasar-ui-qflashcard",
@@ -141,6 +165,10 @@ export const featuredProjects: ProjectEntry[] = [
     tags: ["docs", "markdown", "workflow"],
     links: [
       {
+        label: "Docs",
+        href: "https://md-plugins.netlify.app/",
+      },
+      {
         label: "GitHub",
         href: "https://github.com/hawkeye64/md-plugins",
       },
@@ -154,6 +182,10 @@ export const featuredProjects: ProjectEntry[] = [
     icon: "travel_explore",
     tags: ["icons", "catalog", "app"],
     links: [
+      {
+        label: "App",
+        href: "https://iconexplorer.app/",
+      },
       {
         label: "GitHub",
         href: "https://github.com/hawkeye64/iconexplorer.app",
@@ -169,6 +201,10 @@ export const featuredProjects: ProjectEntry[] = [
     icon: "favorite",
     tags: ["icons", "exports", "TypeScript"],
     links: [
+      {
+        label: "Docs",
+        href: "https://quasar-extras-svg-icons.netlify.app/",
+      },
       {
         label: "GitHub",
         href: "https://github.com/hawkeye64/quasar-extras-svg-icons",
