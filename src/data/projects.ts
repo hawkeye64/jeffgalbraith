@@ -43,6 +43,10 @@ export const featuredProjects: ProjectEntry[] = [
     tags: ["pickers", "forms", "docs"],
     links: [
       {
+        label: "Docs",
+        href: "https://qscroller.netlify.app/",
+      },
+      {
         label: "GitHub",
         href: "https://github.com/quasarframework/quasar-ui-qscroller",
       },
@@ -112,6 +116,10 @@ export const featuredProjects: ProjectEntry[] = [
     icon: "web_asset",
     tags: ["windows", "desktop", "Quasar"],
     links: [
+      {
+        label: "Docs",
+        href: "https://qwindow.netlify.app/",
+      },
       {
         label: "GitHub",
         href: "https://github.com/quasarframework/quasar-ui-qwindow",
