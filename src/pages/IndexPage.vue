@@ -1,31 +1,58 @@
 <template>
-  <q-page class="column justify-center inset-shadow">
-    <div id="wrapper" class="relative-position">
-      <div class="inner-container">
-        <svg id="svg-container" :style="svgStyle" />
+  <q-page class="site-page">
+    <section class="home-hero">
+      <div id="wrapper" class="home-hero__art relative-position">
+        <div class="inner-container">
+          <svg id="svg-container" :style="svgStyle" />
+        </div>
+
+        <div class="home-hero__portrait row justify-center">
+          <div class="home-hero__portrait-frame">
+            <img src="/jeff.png" alt="Jeff Galbraith portrait" />
+          </div>
+        </div>
       </div>
 
-      <div>
-        <p :style="style">Bassano, Alberta, Canada</p>
-      </div>
-
-      <div class="col full-width row justify-center q-my-lg">
-        <q-avatar size="200px">
-          <img src="/jeff.png" alt="Jeff Galbraith portrait" />
-        </q-avatar>
-      </div>
-
-      <div>
-        <p :style="style">
-          Leader/Mentor/Entrepeneur<br />
-          Author<br />
-          C++ and Full-Stack Developer<br />
-          FOSS Contributor<br />
-          Camping and Outdoor Enthusiast<br />
-          Museum Seeker
+      <div class="home-hero__content site-shell">
+        <p class="site-kicker" :style="style">Bassano, Alberta, Canada</p>
+        <h1>Builder, mentor, and Quasar ecosystem wrangler.</h1>
+        <p class="home-hero__lede">
+          I make software tools feel a little more human: Quasar app extensions, documentation
+          systems, icon workflows, and the occasional practical desktop experiment.
         </p>
+
+        <div class="home-hero__actions row q-gutter-sm">
+          <q-btn class="site-btn site-btn--primary" no-caps rounded unelevated @click="goProjects">
+            Explore Projects
+            <q-icon name="arrow_forward" size="18px" class="q-ml-sm" />
+          </q-btn>
+          <q-btn
+            class="site-btn site-btn--ghost"
+            href="https://github.com/hawkeye64"
+            target="_blank"
+            rel="noopener"
+            no-caps
+            rounded
+            unelevated
+          >
+            GitHub
+            <q-icon name="north_east" size="16px" class="q-ml-sm" />
+          </q-btn>
+        </div>
+
+        <div class="home-hero__roles">
+          <span>Leader</span>
+          <span>Mentor</span>
+          <span>VP of Development</span>
+          <span>Former CTO</span>
+          <span>Entrepreneur</span>
+          <span>Author</span>
+          <span>C++ + Full-Stack Developer</span>
+          <span>FOSS Contributor</span>
+          <span>Camping + Museum Seeker</span>
+        </div>
       </div>
-    </div>
+    </section>
 
     <div
       v-if="$q.platform.is.desktop"
@@ -36,8 +63,44 @@
     >
       <q-icon class="continue__arrow-down-icon q-mt-xl" name="expand_more" size="50px" />
     </div>
+
+    <section class="site-shell home-feature-grid">
+      <article class="home-feature-card home-feature-card--wide">
+        <div>
+          <p class="site-kicker">Now shipping</p>
+          <h2>A practical ecosystem of small, focused tools.</h2>
+          <p>
+            The work crosses app extensions, docs, icons, Electron apps, and little glue layers that
+            make other people’s projects easier to ship.
+          </p>
+        </div>
+        <q-btn class="site-btn site-btn--ghost" no-caps rounded unelevated @click="goProjects">
+          Visit the project shelf
+        </q-btn>
+      </article>
+
+      <article
+        v-for="project in featuredPreview"
+        :key="project.name"
+        class="home-feature-card"
+        :style="{ '--project-accent': project.accent }"
+      >
+        <q-icon :name="project.icon" size="30px" />
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.summary }}</p>
+      </article>
+
+      <article class="home-feature-card home-feature-card--leadership">
+        <q-icon name="groups" size="30px" />
+        <h3>Technical Leadership</h3>
+        <p>
+          Previous CTO and current VP of Development, with a management style shaped by mentoring,
+          practical delivery, and helping teams make good decisions under real constraints.
+        </p>
+      </article>
+    </section>
+
     <ProfileComponent />
-    <q-separator />
     <LinksComponent />
   </q-page>
 </template>
@@ -45,15 +108,19 @@
 <script setup lang="ts">
 import { ref, computed, watch, onMounted, onBeforeUnmount, CSSProperties, nextTick } from "vue";
 import { useQuasar } from "quasar";
+import { useRouter } from "vue-router";
 import Snap from "snapsvg-cjs-ts";
 import ProfileComponent from "@/components/ProfileComponent.vue";
 import LinksComponent from "@/components/LinksComponent.vue";
+import { featuredProjects } from "@/data/projects";
 
 defineOptions({
   name: "IndexPage",
 });
 
 const $q = useQuasar();
+const router = useRouter();
+const featuredPreview = featuredProjects.slice(0, 3);
 
 const currentIndex = ref(0);
 const intervalId = ref();
@@ -157,6 +224,10 @@ function morph() {
   }, config.value.delay);
 }
 
+function goProjects() {
+  void router.push("/projects");
+}
+
 function responsiveWidth(width: number) {
   if (width < 390) {
     t.value.attr({
@@ -175,13 +246,13 @@ function responsiveWidth(width: number) {
     });
   } else if (width < 745) {
     t.value.attr({
-      fontSize: "16px",
-      letterSpacing: "5px",
+      fontSize: "13px",
+      letterSpacing: "2px",
     });
   } else {
     t.value.attr({
-      fontSize: "20px",
-      letterSpacing: "5px",
+      fontSize: "13px",
+      letterSpacing: "2px",
     });
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer--icons row justify-center items-center q-gutter-sm q-mb-xl">
+  <div class="footer--icons row justify-center items-center q-gutter-sm">
     <a
       v-for="link in links"
       :key="link.label"
@@ -64,16 +64,30 @@ const links: SocialLink[] = [
 
 <style lang="scss">
 .footer--icons {
+  padding: 32px 20px 48px;
   font-size: 28px;
 
   &__link {
     text-decoration: none;
     outline: 0;
-    color: $primary;
-    transition: color 0.28s;
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    color: var(--jg-accent);
+    border: 1px solid var(--jg-line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    transition:
+      color 0.28s,
+      border-color 0.28s,
+      transform 0.28s;
 
     &:hover {
-      color: $red-8;
+      color: var(--jg-hot);
+      border-color: color-mix(in srgb, var(--jg-hot) 70%, transparent);
+      transform: translateY(-2px);
     }
   }
 }
