@@ -26,15 +26,15 @@
     "dompurify": "^3.4.9",
     "marked": "^18.0.5",
     "marked-gfm-heading-id": "^4.1.4",
-    "quasar": "2.19.3",
+    "quasar": "2.20.0",
     "snapsvg": "^0.5.1",
     "snapsvg-cjs-ts": "^0.0.6",
-    "vue": "3.5.35",
+    "vue": "3.5.38",
     "vue-router": "5.1.0"
   },
   "devDependencies": {
-    "@quasar/app-vite": "3.0.0-beta.44",
-    "@types/node": "^25.9.2",
+    "@quasar/app-vite": "3.0.0-rc.1",
+    "@types/node": "^25.9.3",
     "autoprefixer": "^10.5.0",
     "npm-check-updates": "^22.2.3",
     "oxfmt": "^0.54.0",
@@ -47,6 +47,6 @@
     "node": ">=22.13",
     "pnpm": ">=11.5.0"
   },
-  "packageManager": "pnpm@11.5.2",
+  "packageManager": "pnpm@11.5.3",
   "productName": "Jeff Galbraith"
 }
