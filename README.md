@@ -41,3 +41,10 @@ pnpm build
 ### Customize the configuration
 
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+
+## Support
+
+If Jeff Galbraith's personal website is useful in your workflow and you want to support ongoing maintenance:
+
+- GitHub Sponsors: https://github.com/sponsors/hawkeye64
+- PayPal: https://paypal.me/hawkeye64
