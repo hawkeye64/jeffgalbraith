@@ -12,7 +12,7 @@
 
       <div class="projects-hero__panel">
         <div class="projects-hero__rail" aria-hidden="true">
-          <span v-for="project in featuredProjects.slice(0, 6)" :key="project.name">
+          <span v-for="project in heroProjects" :key="project.name">
             {{ project.name }}
           </span>
           <span class="projects-hero__more">And many more...</span>
@@ -64,4 +64,16 @@ import { featuredProjects, projectHighlights } from "@/data/projects";
 defineOptions({
   name: "ProjectsPage",
 });
+
+const heroProjectNames = [
+  "QCalendar",
+  "QScroller",
+  "md-plugins + Q-Press",
+  "Icon Explorer",
+  "Quasar Extras SVG Icons",
+  "QOverlay",
+];
+const heroProjects = heroProjectNames
+  .map((name) => featuredProjects.find((project) => project.name === name))
+  .filter((project): project is (typeof featuredProjects)[number] => project !== undefined);
 </script>

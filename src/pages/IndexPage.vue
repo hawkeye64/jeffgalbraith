@@ -70,8 +70,8 @@
           <p class="site-kicker">Now shipping</p>
           <h2>A practical ecosystem of small, focused tools.</h2>
           <p>
-            The work crosses app extensions, docs, icons, Electron apps, and little glue layers that
-            make other people’s projects easier to ship.
+            The work crosses app extensions, md-plugins/Q-Press docs tooling, Icon Explorer,
+            Electron apps, and little glue layers that make other people’s projects easier to ship.
           </p>
         </div>
         <q-btn class="site-btn site-btn--ghost" no-caps rounded unelevated @click="goProjects">
@@ -120,7 +120,10 @@ defineOptions({
 
 const $q = useQuasar();
 const router = useRouter();
-const featuredPreview = featuredProjects.slice(0, 3);
+const featuredPreviewNames = ["QCalendar", "md-plugins + Q-Press", "Icon Explorer"];
+const featuredPreview = featuredPreviewNames
+  .map((name) => featuredProjects.find((project) => project.name === name))
+  .filter((project): project is (typeof featuredProjects)[number] => project !== undefined);
 
 const currentIndex = ref(0);
 const intervalId = ref();
