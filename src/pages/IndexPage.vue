@@ -45,6 +45,7 @@
           <span>Mentor</span>
           <span>VP of Development</span>
           <span>Former CTO</span>
+          <span>Former College Professor</span>
           <span>Entrepreneur</span>
           <span>Author</span>
           <span>C++ + Full-Stack Developer</span>
@@ -92,10 +93,11 @@
 
       <article class="home-feature-card home-feature-card--leadership">
         <q-icon name="groups" size="30px" />
-        <h3>Technical Leadership</h3>
+        <h3>Technical Leadership + Teaching</h3>
         <p>
-          Previous CTO and current VP of Development, with a management style shaped by mentoring,
-          practical delivery, and helping teams make good decisions under real constraints.
+          Previous CTO, current VP of Development, and former Bellevue Community College professor,
+          with a management style shaped by mentoring, practical delivery, and helping teams make
+          good decisions under real constraints.
         </p>
       </article>
     </section>
