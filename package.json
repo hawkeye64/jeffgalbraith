@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@quasar/extras": "2.0.1",
-    "dompurify": "^3.4.9",
+    "dompurify": "^3.4.10",
     "marked": "^18.0.5",
     "marked-gfm-heading-id": "^4.1.4",
     "quasar": "2.20.0",
@@ -41,12 +41,12 @@
     "oxlint": "^1.69.0",
     "typescript": "~6.0.3",
     "vite-plugin-checker": "^0.14.1",
-    "vue-tsc": "^3.3.4"
+    "vue-tsc": "^3.3.5"
   },
   "engines": {
     "node": ">=22.13",
     "pnpm": ">=11.5.0"
   },
-  "packageManager": "pnpm@11.5.3",
+  "packageManager": "pnpm@11.6.0",
   "productName": "Jeff Galbraith"
 }
