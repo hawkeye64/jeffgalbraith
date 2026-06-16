@@ -36,13 +36,13 @@
 </template>
 
 <script setup lang="ts">
-import { ProjectEntry } from "@/data/projects";
+import { ProjectEntry } from '@/data/projects'
 
 defineOptions({
-  name: "ProjectCard",
-});
+  name: 'ProjectCard',
+})
 
 defineProps<{
-  project: ProjectEntry;
-}>();
+  project: ProjectEntry
+}>()
 </script>

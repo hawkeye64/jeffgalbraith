@@ -76,19 +76,19 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter } from "vue-router";
+import { useRouter } from 'vue-router'
 
 defineOptions({
-  name: "MainLayout",
-});
+  name: 'MainLayout',
+})
 
-const router = useRouter();
+const router = useRouter()
 
 function goHome() {
-  void router.push("/");
+  void router.push('/')
 }
 
 function goProjects() {
-  void router.push("/projects");
+  void router.push('/projects')
 }
 </script>

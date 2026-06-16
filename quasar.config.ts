@@ -1,23 +1,23 @@
-import { defineConfig } from "#q-app";
+import { defineConfig } from '#q-app'
 
 export default defineConfig((/* ctx */) => {
   return {
     boot: [],
-    css: ["app.scss"],
+    css: ['app.scss'],
 
-    extras: ["roboto-font", "material-icons"],
+    extras: ['roboto-font', 'material-icons'],
 
     build: {
       target: {
-        browser: ["es2022", "firefox115", "chrome115", "safari14"],
-        node: "node24",
+        browser: ['es2022', 'firefox115', 'chrome115', 'safari14'],
+        node: 'node24',
       },
 
-      vueRouterMode: "history",
+      vueRouterMode: 'history',
 
       vitePlugins: [
         [
-          "vite-plugin-checker",
+          'vite-plugin-checker',
           {
             vueTsc: true,
           },
@@ -37,5 +37,5 @@ export default defineConfig((/* ctx */) => {
     },
 
     animations: [],
-  };
-});
+  }
+})

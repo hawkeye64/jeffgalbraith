@@ -1,8 +1,8 @@
 // app global css in SCSS form
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@650;700&family=Quicksand:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@650;700&family=Quicksand:wght@400;500;600;700&display=swap');
 
-@import "markdown/index";
+@import 'markdown/index';
 
 :root {
   --main-bg-color: #070a0f;
@@ -14,8 +14,8 @@
   --jg-accent: #7ed8ff;
   --jg-hot: #ff8c0a;
   --jg-green: #21c900;
-  --font: "Quicksand", sans-serif;
-  --font-display: "Playfair Display", serif;
+  --font: 'Quicksand', sans-serif;
+  --font-display: 'Playfair Display', serif;
 }
 
 body {

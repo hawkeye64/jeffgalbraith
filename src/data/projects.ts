@@ -1,255 +1,255 @@
 export interface ProjectLink {
-  label: string;
-  href: string;
+  label: string
+  href: string
 }
 
 export interface ProjectEntry {
-  name: string;
-  eyebrow: string;
-  summary: string;
-  accent: string;
-  icon: string;
-  tags: string[];
-  links: ProjectLink[];
+  name: string
+  eyebrow: string
+  summary: string
+  accent: string
+  icon: string
+  tags: string[]
+  links: ProjectLink[]
 }
 
 export const featuredProjects: ProjectEntry[] = [
   {
-    name: "QCalendar",
-    eyebrow: "App Extension + Vue Component",
+    name: 'QCalendar',
+    eyebrow: 'App Extension + Vue Component',
     summary:
-      "Calendar views, scheduling surfaces, and date-driven UI patterns as both a Quasar app extension and a standalone Vue component.",
-    accent: "#26d6a8",
-    icon: "event",
-    tags: ["calendar", "scheduling", "Vue component"],
+      'Calendar views, scheduling surfaces, and date-driven UI patterns as both a Quasar app extension and a standalone Vue component.',
+    accent: '#26d6a8',
+    icon: 'event',
+    tags: ['calendar', 'scheduling', 'Vue component'],
     links: [
       {
-        label: "Docs",
-        href: "https://qcalendar.netlify.app/",
+        label: 'Docs',
+        href: 'https://qcalendar.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/quasarframework/quasar-ui-qcalendar",
+        label: 'GitHub',
+        href: 'https://github.com/quasarframework/quasar-ui-qcalendar',
       },
     ],
   },
   {
-    name: "QScroller",
-    eyebrow: "Quasar App Extension",
+    name: 'QScroller',
+    eyebrow: 'Quasar App Extension',
     summary:
-      "Wheel-style string, date, time, date-time, and range inputs with a shared API and docs system.",
-    accent: "#d96d25",
-    icon: "view_list",
-    tags: ["pickers", "forms", "docs"],
+      'Wheel-style string, date, time, date-time, and range inputs with a shared API and docs system.',
+    accent: '#d96d25',
+    icon: 'view_list',
+    tags: ['pickers', 'forms', 'docs'],
     links: [
       {
-        label: "Docs",
-        href: "https://qscroller.netlify.app/",
+        label: 'Docs',
+        href: 'https://qscroller.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/quasarframework/quasar-ui-qscroller",
+        label: 'GitHub',
+        href: 'https://github.com/quasarframework/quasar-ui-qscroller',
       },
     ],
   },
   {
-    name: "QMarkdown",
-    eyebrow: "Quasar App Extension",
+    name: 'QMarkdown',
+    eyebrow: 'Quasar App Extension',
     summary:
-      "Markdown rendering for Quasar projects, including utilities that support richer documentation flows.",
-    accent: "#66d9ef",
-    icon: "article",
-    tags: ["markdown", "docs", "content"],
+      'Markdown rendering for Quasar projects, including utilities that support richer documentation flows.',
+    accent: '#66d9ef',
+    icon: 'article',
+    tags: ['markdown', 'docs', 'content'],
     links: [
       {
-        label: "Docs",
-        href: "https://qmarkdown.netlify.app/",
+        label: 'Docs',
+        href: 'https://qmarkdown.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/quasarframework/quasar-ui-qmarkdown",
+        label: 'GitHub',
+        href: 'https://github.com/quasarframework/quasar-ui-qmarkdown',
       },
     ],
   },
   {
-    name: "QIconPicker",
-    eyebrow: "Quasar App Extension",
+    name: 'QIconPicker',
+    eyebrow: 'Quasar App Extension',
     summary:
-      "Searchable icon selection for forms, builders, and admin tools that need a friendly icon workflow.",
-    accent: "#2bc4e8",
-    icon: "ads_click",
-    tags: ["icons", "search", "forms"],
+      'Searchable icon selection for forms, builders, and admin tools that need a friendly icon workflow.',
+    accent: '#2bc4e8',
+    icon: 'ads_click',
+    tags: ['icons', 'search', 'forms'],
     links: [
       {
-        label: "Docs",
-        href: "https://qiconpicker.netlify.app/",
+        label: 'Docs',
+        href: 'https://qiconpicker.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/quasarframework/quasar-ui-qiconpicker",
+        label: 'GitHub',
+        href: 'https://github.com/quasarframework/quasar-ui-qiconpicker',
       },
     ],
   },
   {
-    name: "QOverlay",
-    eyebrow: "Quasar App Extension",
-    summary: "Overlay primitives and helpers for layered UI behaviors inside Quasar applications.",
-    accent: "#f2c94c",
-    icon: "layers",
-    tags: ["overlay", "layers", "UI"],
+    name: 'QOverlay',
+    eyebrow: 'Quasar App Extension',
+    summary: 'Overlay primitives and helpers for layered UI behaviors inside Quasar applications.',
+    accent: '#f2c94c',
+    icon: 'layers',
+    tags: ['overlay', 'layers', 'UI'],
     links: [
       {
-        label: "Docs",
-        href: "https://qoverlay.netlify.app/",
+        label: 'Docs',
+        href: 'https://qoverlay.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/quasarframework/quasar-ui-qoverlay",
+        label: 'GitHub',
+        href: 'https://github.com/quasarframework/quasar-ui-qoverlay',
       },
     ],
   },
   {
-    name: "QWindow",
-    eyebrow: "Quasar App Extension",
-    summary: "Windowing patterns for Quasar interfaces that need draggable, composable panels.",
-    accent: "#9b8cff",
-    icon: "web_asset",
-    tags: ["windows", "desktop", "Quasar"],
+    name: 'QWindow',
+    eyebrow: 'Quasar App Extension',
+    summary: 'Windowing patterns for Quasar interfaces that need draggable, composable panels.',
+    accent: '#9b8cff',
+    icon: 'web_asset',
+    tags: ['windows', 'desktop', 'Quasar'],
     links: [
       {
-        label: "Docs",
-        href: "https://qwindow.netlify.app/",
+        label: 'Docs',
+        href: 'https://qwindow.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/quasarframework/quasar-ui-qwindow",
+        label: 'GitHub',
+        href: 'https://github.com/quasarframework/quasar-ui-qwindow',
       },
     ],
   },
   {
-    name: "QMediaPlayer",
-    eyebrow: "Quasar App Extension",
-    summary: "Media playback controls and presentation patterns built for Quasar applications.",
-    accent: "#ff7a90",
-    icon: "play_circle",
-    tags: ["media", "player", "components"],
+    name: 'QMediaPlayer',
+    eyebrow: 'Quasar App Extension',
+    summary: 'Media playback controls and presentation patterns built for Quasar applications.',
+    accent: '#ff7a90',
+    icon: 'play_circle',
+    tags: ['media', 'player', 'components'],
     links: [
       {
-        label: "Docs",
-        href: "https://qmediaplayer.netlify.app/",
+        label: 'Docs',
+        href: 'https://qmediaplayer.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/quasarframework/quasar-ui-qmediaplayer",
+        label: 'GitHub',
+        href: 'https://github.com/quasarframework/quasar-ui-qmediaplayer',
       },
     ],
   },
   {
-    name: "QFlashcard",
-    eyebrow: "Quasar App Extension",
+    name: 'QFlashcard',
+    eyebrow: 'Quasar App Extension',
     summary:
-      "Flashcard UI tools for learning flows, study interfaces, and compact knowledge checks.",
-    accent: "#ffb86c",
-    icon: "style",
-    tags: ["learning", "cards", "education"],
+      'Flashcard UI tools for learning flows, study interfaces, and compact knowledge checks.',
+    accent: '#ffb86c',
+    icon: 'style',
+    tags: ['learning', 'cards', 'education'],
     links: [
       {
-        label: "Docs",
-        href: "https://qflashcard.netlify.app/",
+        label: 'Docs',
+        href: 'https://qflashcard.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/quasarframework/quasar-ui-qflashcard",
+        label: 'GitHub',
+        href: 'https://github.com/quasarframework/quasar-ui-qflashcard',
       },
     ],
   },
   {
-    name: "md-plugins + Q-Press",
-    eyebrow: "Docs Tooling",
+    name: 'md-plugins + Q-Press',
+    eyebrow: 'Docs Tooling',
     summary:
-      "Shared markdown, example, theme, and landing-page tooling for Quasar documentation sites.",
-    accent: "#8be9fd",
-    icon: "auto_stories",
-    tags: ["docs", "markdown", "workflow"],
+      'Shared markdown, example, theme, and landing-page tooling for Quasar documentation sites.',
+    accent: '#8be9fd',
+    icon: 'auto_stories',
+    tags: ['docs', 'markdown', 'workflow'],
     links: [
       {
-        label: "Docs",
-        href: "https://md-plugins.netlify.app/",
+        label: 'Docs',
+        href: 'https://md-plugins.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/hawkeye64/md-plugins",
+        label: 'GitHub',
+        href: 'https://github.com/hawkeye64/md-plugins',
       },
     ],
   },
   {
-    name: "Icon Explorer",
-    eyebrow: "Application",
-    summary: "A searchable catalog experience for SVG icon packages, backed by generated metadata.",
-    accent: "#7ee787",
-    icon: "travel_explore",
-    tags: ["icons", "catalog", "app"],
+    name: 'Icon Explorer',
+    eyebrow: 'Application',
+    summary: 'A searchable catalog experience for SVG icon packages, backed by generated metadata.',
+    accent: '#7ee787',
+    icon: 'travel_explore',
+    tags: ['icons', 'catalog', 'app'],
     links: [
       {
-        label: "App",
-        href: "https://iconexplorer.app/",
+        label: 'App',
+        href: 'https://iconexplorer.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/hawkeye64/iconexplorer.app",
+        label: 'GitHub',
+        href: 'https://github.com/hawkeye64/iconexplorer.app',
       },
     ],
   },
   {
-    name: "Quasar Extras SVG Icons",
-    eyebrow: "Icon Library",
+    name: 'Quasar Extras SVG Icons',
+    eyebrow: 'Icon Library',
     summary:
-      "Generated SVG icon exports and readable import paths for Quasar icon-heavy applications.",
-    accent: "#a78bfa",
-    icon: "favorite",
-    tags: ["icons", "exports", "TypeScript"],
+      'Generated SVG icon exports and readable import paths for Quasar icon-heavy applications.',
+    accent: '#a78bfa',
+    icon: 'favorite',
+    tags: ['icons', 'exports', 'TypeScript'],
     links: [
       {
-        label: "Docs",
-        href: "https://quasar-extras-svg-icons.netlify.app/",
+        label: 'Docs',
+        href: 'https://quasar-extras-svg-icons.netlify.app/',
       },
       {
-        label: "GitHub",
-        href: "https://github.com/hawkeye64/quasar-extras-svg-icons",
+        label: 'GitHub',
+        href: 'https://github.com/hawkeye64/quasar-extras-svg-icons',
       },
     ],
   },
   {
-    name: "Electron File Explorer",
-    eyebrow: "Application",
+    name: 'Electron File Explorer',
+    eyebrow: 'Application',
     summary:
-      "A Quasar + Electron experiment for file browsing, desktop app workflow, and migration testing.",
-    accent: "#5eead4",
-    icon: "folder_open",
-    tags: ["Electron", "desktop", "Quasar"],
+      'A Quasar + Electron experiment for file browsing, desktop app workflow, and migration testing.',
+    accent: '#5eead4',
+    icon: 'folder_open',
+    tags: ['Electron', 'desktop', 'Quasar'],
     links: [
       {
-        label: "GitHub",
-        href: "https://github.com/hawkeye64/electron-quasar-file-explorer-v2",
+        label: 'GitHub',
+        href: 'https://github.com/hawkeye64/electron-quasar-file-explorer-v2',
       },
     ],
   },
-];
+]
 
 export const projectHighlights = [
   {
-    title: "App Extension Migration",
-    text: "Modernizing the extension family for Vue 3, Quasar 2/3 beta, cleaner builds, and docs that can ship examples without drama.",
-    icon: "rocket_launch",
+    title: 'App Extension Migration',
+    text: 'Modernizing the extension family for Vue 3, Quasar 2/3 beta, cleaner builds, and docs that can ship examples without drama.',
+    icon: 'rocket_launch',
   },
   {
-    title: "Documentation Systems",
-    text: "Q-Press and md-plugins keep landing pages, markdown transforms, examples, and theme behavior consistent across the ecosystem.",
-    icon: "schema",
+    title: 'Documentation Systems',
+    text: 'Q-Press and md-plugins keep landing pages, markdown transforms, examples, and theme behavior consistent across the ecosystem.',
+    icon: 'schema',
   },
   {
-    title: "Icon Workflows",
-    text: "Icon Explorer and quasar-extras-svg-icons turn giant icon catalogs into searchable, importable, app-ready packages.",
-    icon: "category",
+    title: 'Icon Workflows',
+    text: 'Icon Explorer and quasar-extras-svg-icons turn giant icon catalogs into searchable, importable, app-ready packages.',
+    icon: 'category',
   },
-];
+]

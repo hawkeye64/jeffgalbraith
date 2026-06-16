@@ -58,22 +58,22 @@
 </template>
 
 <script setup lang="ts">
-import ProjectCard from "@/components/ProjectCard.vue";
-import { featuredProjects, projectHighlights } from "@/data/projects";
+import ProjectCard from '@/components/ProjectCard.vue'
+import { featuredProjects, projectHighlights } from '@/data/projects'
 
 defineOptions({
-  name: "ProjectsPage",
-});
+  name: 'ProjectsPage',
+})
 
 const heroProjectNames = [
-  "QCalendar",
-  "QScroller",
-  "md-plugins + Q-Press",
-  "Icon Explorer",
-  "Quasar Extras SVG Icons",
-  "QOverlay",
-];
+  'QCalendar',
+  'QScroller',
+  'md-plugins + Q-Press',
+  'Icon Explorer',
+  'Quasar Extras SVG Icons',
+  'QOverlay',
+]
 const heroProjects = heroProjectNames
   .map((name) => featuredProjects.find((project) => project.name === name))
-  .filter((project): project is (typeof featuredProjects)[number] => project !== undefined);
+  .filter((project): project is (typeof featuredProjects)[number] => project !== undefined)
 </script>
