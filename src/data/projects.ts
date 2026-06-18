@@ -15,6 +15,43 @@ export interface ProjectEntry {
 
 export const featuredProjects: ProjectEntry[] = [
   {
+    name: 'md-plugins + Q-Press',
+    eyebrow: 'Docs Tooling',
+    summary:
+      'Shared markdown, examples, SSG, search, theme, and landing-page tooling for Quasar documentation sites.',
+    accent: '#8be9fd',
+    icon: 'auto_stories',
+    tags: ['docs', 'markdown', 'workflow'],
+    links: [
+      {
+        label: 'Docs',
+        href: 'https://md-plugins.netlify.app/',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/hawkeye64/md-plugins',
+      },
+    ],
+  },
+  {
+    name: 'Icon Explorer',
+    eyebrow: 'Application',
+    summary: 'A searchable catalog experience for SVG icon packages, backed by generated metadata.',
+    accent: '#7ee787',
+    icon: 'travel_explore',
+    tags: ['icons', 'catalog', 'app'],
+    links: [
+      {
+        label: 'App',
+        href: 'https://iconexplorer.app/',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/hawkeye64/iconexplorer.app',
+      },
+    ],
+  },
+  {
     name: 'QCalendar',
     eyebrow: 'App Extension + Vue Component',
     summary:
@@ -164,43 +201,6 @@ export const featuredProjects: ProjectEntry[] = [
     ],
   },
   {
-    name: 'md-plugins + Q-Press',
-    eyebrow: 'Docs Tooling',
-    summary:
-      'Shared markdown, examples, SSG, search, theme, and landing-page tooling for Quasar documentation sites.',
-    accent: '#8be9fd',
-    icon: 'auto_stories',
-    tags: ['docs', 'markdown', 'workflow'],
-    links: [
-      {
-        label: 'Docs',
-        href: 'https://md-plugins.netlify.app/',
-      },
-      {
-        label: 'GitHub',
-        href: 'https://github.com/hawkeye64/md-plugins',
-      },
-    ],
-  },
-  {
-    name: 'Icon Explorer',
-    eyebrow: 'Application',
-    summary: 'A searchable catalog experience for SVG icon packages, backed by generated metadata.',
-    accent: '#7ee787',
-    icon: 'travel_explore',
-    tags: ['icons', 'catalog', 'app'],
-    links: [
-      {
-        label: 'App',
-        href: 'https://iconexplorer.app/',
-      },
-      {
-        label: 'GitHub',
-        href: 'https://github.com/hawkeye64/iconexplorer.app',
-      },
-    ],
-  },
-  {
     name: 'Quasar Extras SVG Icons',
     eyebrow: 'Icon Library',
     summary:
@@ -244,7 +244,7 @@ export const projectHighlights = [
   },
   {
     title: 'Documentation Systems',
-    text: 'Q-Press and md-plugins keep landing pages, markdown transforms, examples, and theme behavior consistent across the ecosystem.',
+    text: 'Q-Press and md-plugins keep landing pages, markdown transforms, examples, static search, SSG output, and theme behavior consistent across the ecosystem.',
     icon: 'schema',
   },
   {
