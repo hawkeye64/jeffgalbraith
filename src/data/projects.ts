@@ -167,7 +167,7 @@ export const featuredProjects: ProjectEntry[] = [
     name: 'md-plugins + Q-Press',
     eyebrow: 'Docs Tooling',
     summary:
-      'Shared markdown, example, theme, and landing-page tooling for Quasar documentation sites.',
+      'Shared markdown, examples, SSG, search, theme, and landing-page tooling for Quasar documentation sites.',
     accent: '#8be9fd',
     icon: 'auto_stories',
     tags: ['docs', 'markdown', 'workflow'],
