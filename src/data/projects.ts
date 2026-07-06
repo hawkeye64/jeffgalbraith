@@ -239,7 +239,7 @@ export const featuredProjects: ProjectEntry[] = [
 export const projectHighlights = [
   {
     title: 'App Extension Migration',
-    text: 'Modernizing the extension family for Vue 3, Quasar 2/3 beta, cleaner builds, and docs that can ship examples without drama.',
+    text: 'Modernizing the extension family for Vue 3, Quasar 2, stable Quasar App Vite 3, cleaner builds, and docs that can ship examples without drama.',
     icon: 'rocket_launch',
   },
   {
