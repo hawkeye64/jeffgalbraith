@@ -22,31 +22,31 @@
     "postinstall": "quasar prepare --silent"
   },
   "dependencies": {
-    "@quasar/extras": "2.0.1",
-    "dompurify": "^3.4.11",
-    "marked": "^18.0.5",
+    "@quasar/extras": "2.0.2",
+    "dompurify": "^3.4.12",
+    "marked": "^18.0.6",
     "marked-gfm-heading-id": "^4.1.4",
-    "quasar": "2.21.1",
+    "quasar": "2.21.3",
     "snapsvg": "^0.5.1",
     "snapsvg-cjs-ts": "^0.0.6",
-    "vue": "3.5.38",
+    "vue": "3.5.39",
     "vue-router": "5.1.0"
   },
   "devDependencies": {
-    "@quasar/app-vite": "3.0.0",
-    "@types/node": "^25.9.3",
-    "autoprefixer": "^10.5.0",
-    "npm-check-updates": "^22.2.3",
-    "oxfmt": "^0.55.0",
-    "oxlint": "^1.70.0",
+    "@quasar/app-vite": "3.0.1",
+    "@types/node": "^26.1.1",
+    "autoprefixer": "^10.5.2",
+    "npm-check-updates": "^22.2.9",
+    "oxfmt": "^0.58.0",
+    "oxlint": "^1.73.0",
     "typescript": "~6.0.3",
     "vite-plugin-checker": "^0.14.4",
-    "vue-tsc": "^3.3.5"
+    "vue-tsc": "^3.3.7"
   },
   "engines": {
     "node": ">=22.13",
     "pnpm": ">=11.5.0"
   },
-  "packageManager": "pnpm@11.8.0",
+  "packageManager": "pnpm@11.12.0",
   "productName": "Jeff Galbraith"
 }
