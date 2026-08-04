@@ -16,7 +16,7 @@ import routes from './routes'
  * with the Router instance.
  */
 
-export default defineRouter((/* { store, ssrContext } */) => {
+const createAppRouter = (/* { store, ssrContext } */) => {
   const createHistory = import.meta.env.QUASAR_SERVER
     ? createMemoryHistory
     : import.meta.env.QUASAR_VUE_ROUTER_MODE === 'history'
@@ -34,4 +34,9 @@ export default defineRouter((/* { store, ssrContext } */) => {
   })
 
   return Router
-})
+}
+
+// Vue Router 5 uses private symbol keys in its Router type. pnpm can expose
+// that type through both the app-vite wrapper and the app dependency, making
+// structurally identical Router instances appear incompatible to TypeScript.
+export default defineRouter(createAppRouter as Parameters<typeof defineRouter>[0])

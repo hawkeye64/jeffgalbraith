@@ -23,30 +23,30 @@
   },
   "dependencies": {
     "@quasar/extras": "2.0.2",
-    "dompurify": "^3.4.12",
-    "marked": "^18.0.6",
+    "dompurify": "^3.4.13",
+    "marked": "^18.0.9",
     "marked-gfm-heading-id": "^4.1.4",
-    "quasar": "2.21.3",
+    "quasar": "2.23.5",
     "snapsvg": "^0.5.1",
     "snapsvg-cjs-ts": "^0.0.6",
-    "vue": "3.5.39",
-    "vue-router": "5.1.0"
+    "vue": "3.5.40",
+    "vue-router": "5.2.0"
   },
   "devDependencies": {
-    "@quasar/app-vite": "3.0.1",
-    "@types/node": "^26.1.1",
-    "autoprefixer": "^10.5.2",
-    "npm-check-updates": "^22.2.9",
-    "oxfmt": "^0.58.0",
-    "oxlint": "^1.73.0",
+    "@quasar/app-vite": "3.3.1",
+    "@types/node": "^26.1.2",
+    "autoprefixer": "^10.5.4",
+    "npm-check-updates": "^23.0.1",
+    "oxfmt": "^0.62.0",
+    "oxlint": "^1.77.0",
     "typescript": "~6.0.3",
-    "vite-plugin-checker": "^0.14.4",
-    "vue-tsc": "^3.3.7"
+    "vite-plugin-checker": "^0.14.5",
+    "vue-tsc": "^3.3.9"
   },
   "engines": {
     "node": ">=22.13",
     "pnpm": ">=11.5.0"
   },
-  "packageManager": "pnpm@11.12.0",
+  "packageManager": "pnpm@11.20.0",
   "productName": "Jeff Galbraith"
 }
