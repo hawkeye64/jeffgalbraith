@@ -26,14 +26,14 @@
     "dompurify": "^3.4.13",
     "marked": "^18.0.9",
     "marked-gfm-heading-id": "^4.1.4",
-    "quasar": "2.23.5",
+    "quasar": "2.24.0",
     "snapsvg": "^0.5.1",
     "snapsvg-cjs-ts": "^0.0.6",
-    "vue": "3.5.40",
+    "vue": "3.5.41",
     "vue-router": "5.2.0"
   },
   "devDependencies": {
-    "@quasar/app-vite": "3.3.1",
+    "@quasar/app-vite": "3.5.0",
     "@types/node": "^26.1.2",
     "autoprefixer": "^10.5.4",
     "npm-check-updates": "^23.0.1",
