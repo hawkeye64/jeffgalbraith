@@ -4,7 +4,7 @@ publish = "dist/spa"
 
 [build.environment]
 NODE_VERSION = "24"
-PNPM_VERSION = "11.4.0"
+PNPM_VERSION = "12.4.1"
 
 [[redirects]]
 from = "/*"
